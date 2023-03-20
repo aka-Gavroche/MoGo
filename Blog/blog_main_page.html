@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style_zero.css">
+    <link rel="stylesheet" href="Blog_CSS/blog_style.css">
+    <!------------------------------------Fonts------------------------------------>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-----Іконка вкладки сайту----->
+    <link rel="shortcut icon" href="../IMG/favicon.ico">
+    <title>Blog</title>
+</head>
+<body>
+    <!------------------------------------Шапка сторінки------------------------------------>
+    <header class="header">
+        <h1>
+            <a class = "main_page_link" href="../index.html">DmyYarMar</a>
+            <hr>
+        </h1>
+        <h2 class="suptitle_text">Blog</h2>
+    </header>
+
+    <div class="suptitle">
+        <h2 class="suptitle_text suptitle_text--second">Blog</h2>
+    </div>
+
+    <div class="suptitle_list">
+        <div class="suptitle_list_block">
+            <div class="suptitle_list_block_header">
+                <div class="close_button">X</div>
+            </div>
+            <div class="suptitle_list_content">
+                <p id="suptitleItem1">Стаття #1</p>
+                <p id="suptitleItem2">Стаття #2</p>
+                <p id="suptitleItem3">Стаття #3</p>
+                <p id="suptitleItem4">Стаття #4</p>
+                <p id="suptitleItem5">Стаття #5</p>
+            </div>
+        </div>
+    </div>
+
+    <div id = "top_button" class="top_button">
+    </div>
+
+    <!------------------------------------Статті блогу------------------------------------>
+    <!--------------------To Do-------------------->
+    <!--1. Взяти блок посилання в цикл foreach-->
+    <!--2. посилатись буде блок на одну і ту ж сторінку. 
+           Тобто існує ця головна сторінка і ще одна на яку ми посилаємось-->
+    <!--3. Дані до заголовка блоку посилання, а також до його змісту (підтеми) підтягуються із бази-->
+    <!--4. В підсумку, користувач заходить за посилання на одну і ту ж саму сторінку, просто на неї,
+    залежно від обраної користувачем статті, підтягуються дані із іншого рядка таблиці бази данних-->
+    <a href="blog_article_page.html" target="_blank" class="lesson_link block1">
+        <div class="block main_page">
+            <h3 class="block-title">Історія Веб-дизайну</h3>
+                <div class="block-content" >
+                    <p><b>Зміст:</b></p>
+                    <ul>
+                        <li>Зачатки Веб та Веб-дизайну.</li>
+                        <li>Еволюція Веб-дизайну</li>
+                        <li>Завершення браузерних змагань.</li>
+                        <li>Період 2001-2012 років.</li>
+                        <li>Веб-дизайн після 2012 року і дотепер.</li>
+                    </ul>
+                </div>
+        </div>
+    </a>
+
+    <a href="#" class="lesson_link block2">
+        <div class="block main_page">
+            <h3 class="block-title">Стаття #2</h3>
+                <div class="block-content" >
+                    <p><b>Зміст:</b></p>
+                    <ul>
+                        <li>Lorem, ipsum.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    </ul>
+                </div>
+        </div>
+    </a>
+
+    <a href="#" class="lesson_link block3">
+        <div class="block main_page">
+            <h3 class="block-title">Стаття #3</h3>
+                <div class="block-content" >
+                    <p><b>Зміст:</b></p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem, ipsum dolor.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                    </ul>
+                </div>
+        </div>
+    </a>
+
+    <a href="#" class="lesson_link block4">
+        <div class="block main_page">
+            <h3 class="block-title">Стаття #4</h3>
+                <div class="block-content" >
+                    <p><b>Зміст:</b></p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem, ipsum dolor.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                    </ul>
+                </div>
+        </div>
+    </a>
+
+    <a href="#" class="lesson_link block5">
+        <div class="block main_page">
+            <h3 class="block-title">Стаття #5</h3>
+                <div class="block-content" >
+                    <p><b>Зміст:</b></p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit.</li>
+                        <li>Lorem, ipsum dolor.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                    </ul>
+                </div>
+        </div>
+    </a>
+        
+    <!------------------------------------Скрипти на чистому JS------------------------------------>
+    <script src="Blog_JS/blog_main_page_script.js"></script>
+    <script src="Blog_JS/blog_nav_list_script.js"></script>
+</body>
+</html>
