@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <!------------------------------------Шрифти------------------------------------>
-    <!-------Kaushan script------->
+    <!-------Lobster------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <!-------Montserrat regular&bold------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,27 +21,23 @@
     <link rel="stylesheet" href="CSS\style_zero.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="CSS\style.css">
-    <title>MoGo</title>
+    <!-----Іконка вкладки сайту----->
+    <link rel="shortcut icon" href="IMG/favicon.ico">
+    <title>DmyYarMar</title>
 </head>
 <body>
     <!--------------------------------INTRO-------------------------------->
         <header id="header">
            <div class="container">
                 <div class="header__inner">
-                    <div class="header_logo" data-scroll="#intro">MoGo</div>
+                    <div class="header_logo" data-scroll="#intro">DmyYarMar</div>
 
                     <nav class="header_nav" id="nav">
                         <a class="nav__link" href="#" data-scroll="#about">About</a>
                         <a class="nav__link" href="#" data-scroll="#services">Service</a>
                         <a class="nav__link" href="#" data-scroll="#blog">Blog</a>
-                        <a class="nav__link" href="#" data-scroll="#works">Work</a>
+                        <a class="nav__link" href="#" data-scroll="#works">Work</a> <!--Закинути посилання на альбом робіт!!!-->
                         <a class="nav__link" href="#" data-scroll="#footer">Contact</a>
-                        <a class="nav__link" href="#">
-                            <img src="IMG\SHOPPING CART.png" alt="">
-                        </a>
-                        <a class="nav__link" href="#">
-                            <img src="IMG\MAGNIFYING GLASS.png" alt="">
-                        </a>
                     </nav>
 
                     <button class="nav-toggle" type="button" id="nav_toggle">
@@ -54,25 +50,25 @@
         <div class="intro" id="intro">
             <div class="container">
                 <div class="intro__inner">
-                    <h2 class="intro__suptitle">Creative Template</h2>
-                    <h1 class="intro__title">Welcome to MoGo</h1>
+                    <h2 class="intro__suptitle">Творчість. Ентузіазм</h2>
+                    <h1 class="intro__title">DYMar</h1>
     
-                    <div class="button__block">
+                    <!-- <div class="button__block">
                         <a class="intro__button" href="#">Learn More</a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
             <div class="slider">
                <div class="container"> 
                     <div class="slider__inner">
-                        <div class="slider__item active"><b>01</b> <span class="slider__text">intro</span></div>
-                <div class="slider__item"><b>02</b> <span class="slider__text">work</span></div>
-                <div class="slider__item"><b>03</b> <span class="slider__text">about</span></div>
-                <div class="slider__item"><b>04</b> <span class="slider__text">contacts</span></div>
+                        <a href="Blog\blog_main_page.html" target="_blank" class="slider__item intro__button"><b>01</b> <span class="slider__text">Блог</span></a>
+                        <a href="Gallery\Gallery_main_page.html" class="slider__item intro__button"><b>02</b> <span class="slider__text">Галерея</span></a>
                     </div>
                </div>
             </div>
+
+
         </div>
 
         
@@ -80,14 +76,12 @@
         <section class="section" id="about">
             <div class="container">
                 <div class="section__header">
-                    <h3 class="section__suptitle">What we do  </h3>
-                    <h2 class="section__title">Story about us</h2>
+                    <h3 class="section__suptitle">Хто? Що? Для кого?</h3>
+                    <h2 class="section__title">Коротко про нас</h2>
                     <div class="section__text">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Corrupti ea aliquid nihil nobis quaerat aliquam similique aut. 
-                            Consequatur incidunt maiores sed quaerat rerum earum porro. 
-                            Magnam, architecto harum? Quod, voluptatibus?
+                            Ми молода команда ентузіастів, які люблять те чим займаються, а саме:
+                            фотографування, веб-дизайн, розробка фулстек веб-проектів. "Від людей - для людей" - основний принцип нашого методу роботи. 
                         </p>
                     </div>
                 </div>
@@ -98,15 +92,15 @@
                             <div class="about__image">
                                 <img src="IMG\About\1.jpg" alt="">
                             </div>
-                            <div class="about__text">Super team</div>
+                            <div class="about__text">Фото</div>
                         </div>
                     </div>
                     <div class="about__item">
                         <div class="about__inner">
                             <div class="about__image">
-                                <img src="IMG\About\2.jpg" alt="">
+                                <img src="IMG\About\2.jfif" alt="">
                             </div>
-                            <div class="about__text">Super team</div>
+                            <div class="about__text">Дизайн</div>
                         </div>
                     </div>
                     <div class="about__item">
@@ -114,7 +108,7 @@
                         <div class="about__image">
                             <img src="IMG\About\3.jpg" alt="">
                         </div>
-                        <div class="about__text">Super team</div>
+                        <div class="about__text">Розробка</div>
                        </div>
                     </div>
                 </div>
@@ -124,24 +118,24 @@
             <div class="container">
                 <div class="stat">
                     <div class="stat__item">
-                        <div class="stat__count">42</div>
-                        <div class="stat__text">Web Design Projects</div>
+                        <div class="stat__count">38</div>
+                        <div class="stat__text">Успішних проектів</div>
                     </div>
                     <div class="stat__item">
-                        <div class="stat__count">123</div>
-                        <div class="stat__text">Happy client</div>
+                        <div class="stat__count">150</div>
+                        <div class="stat__text">Задоволених клієнтів</div>
                     </div>
                     <div class="stat__item">
-                        <div class="stat__count">15</div>
-                        <div class="stat__text">Award winner</div>
+                        <div class="stat__count">100</div>
+                        <div class="stat__text">Свіжих ідей</div>
                     </div>
                     <div class="stat__item">
                         <div class="stat__count">99</div>
-                        <div class="stat__text">Cup of coffee</div>
+                        <div class="stat__text">Чашок кави</div>
                     </div>
                     <div class="stat__item">
-                        <div class="stat__count">24</div>
-                        <div class="stat__text">Members</div>
+                        <div class="stat__count">13</div>
+                        <div class="stat__text">Учасників</div>
                     </div>
                 </div>
             </div>
@@ -151,53 +145,51 @@
             <section class="section" id="services">
                 <div class="container">
                     <div class="section__header">
-                        <h3 class="section__suptitle">We work with</h3>
-                        <h2 class="section__title">Amazing services</h2>
+                        <h3 class="section__suptitle">Вчасність і відповідність</h3>
+                        <h2 class="section__title">Професійних підхід</h2>
                     </div>
     
                     <div class="services">
                         <div class="services__item">
                             <img class="services__icon" src="IMG/Icons/ALARM.jpg" alt="">
-                            <div class="services__title">Photography</div>
+                            <div class="services__title">Чіткі терміни</div>
                             <div class="services__text">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Commodi reiciendis minus provident ex.
+                                Здаємо виконані для клієнтів проекти без запізнень і ускладнень.
                             </div>
                         </div>
                         <div class="services__item">
                             <img class="services__icon" src="IMG/Icons/LINE_GRAPH.jpg" alt="">
-                            <div class="services__title">Web Design</div>
+                            <div class="services__title">Підтримка</div>
                             <div class="services__text">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Commodi reiciendis minus provident ex.
-                            </div>                    </div>
+                                Підтримування вже зданих проектів згідно по затверджених із клієнтами строках.
+                            </div>                    
+                        </div>
                         <div class="services__item">
                             <img class="services__icon" src="IMG/Icons/COMPUTER _ OK.jpg" alt="">
-                            <div class="services__title">Creativity</div>
+                            <div class="services__title">Якість</div>
                             <div class="services__text">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Commodi reiciendis minus provident ex.
-                            </div>                    </div>
+                                Відповідальний підхід до виконання завдань, пошук надійних та перевірених рішень.
+                            </div>                    
+                        </div>
                         <div class="services__item">
                             <img class="services__icon" src="IMG/Icons/BOOK_2.jpg" alt="">
                             <div class="services__title">Seo</div>
                             <div class="services__text">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Commodi reiciendis minus provident ex.
-                            </div>                    </div>
+                               Пошукова оптимізація сайту для відповідності вимогам алгоритму пошукових систем.
+                            </div>                    
+                        </div>
                         <div class="services__item">
                             <img class="services__icon" src="IMG/Icons/HOME.jpg" alt="">
-                            <div class="services__title">Css/Html</div>
+                            <div class="services__title">HTML/CSS/JS</div>
                             <div class="services__text">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Commodi reiciendis minus provident ex.
-                            </div>                    </div>
+                               Використання сучасного стеку технологій, робота із препроцесорами та фреймворками.
+                            </div>                    
+                        </div>
                         <div class="services__item">
                             <img class="services__icon" src="IMG/Icons/IMAGE.jpg" alt="">
-                            <div class="services__title">Digital</div>
+                            <div class="services__title">Відповідність</div>
                             <div class="services__text">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Commodi reiciendis minus provident ex.
+                                Максимально точна і чітка реалізація технічного завдання від клієнтів з урахуванням усіх тонкощів.
                             </div>                   
                         </div>
                     </div>
@@ -205,33 +197,16 @@
                 </div>
             </section>
     
-        <!--------------------------------UNIQUE DESIGN-------------------------------->
-             <section class="section section--devices" >
-                <div class="container">
-                    <div class="section__header">
-                        <h3 class="section__suptitle">For all devices</h3>
-                        <h2 class="section__title">Unique design</h2>
-                    </div>
-    
-                    <div class="devices">
-                        <img class="devices_tablet" src="IMG/Unique-design/Tablet-image.png" alt="">
-                        <img class="devices__mobile" src="IMG/Unique-design/Mobile-image.png" alt="">
-                    </div>
-                </div>
-             </section>
         <!--------------------------------WHAT WE DO-------------------------------->
             <section class="section">
                 <div class="container">
                     <div class="section__header">
-                        <h3 class="section__suptitle">Service</h3>
-                        <h2 class="section__title">What we do</h2>
-    
+                        <h3 class="section__suptitle">Детальніше про</h3>
+                        <h2 class="section__title">Напрямки роботи</h2>
                         <div class="section__text">
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Corrupti ea aliquid nihil nobis quaerat aliquam similique aut. 
-                                Consequatur incidunt maiores sed quaerat rerum earum porro. 
-                                Magnam, architecto harum? Quod, voluptatibus?
+                                Якість та ретельність виконання на всіх етапах розробки у різних напрямках 
+                                із використанням широкого стеку технологій, відповідно до останніх вимог сучасності.
                             </p>
                         </div>
                     </div>
@@ -245,22 +220,13 @@
                                 <div class="accordion__item active" onclick="this.className = (this.className == 'accordion__item' ? 'accordion__item active' : 'accordion__item')">
                                     <div class="accordion__header">
                                         <img class="accordion__icon" src="IMG/WeDo/PICTURE.png" alt="">
-                                        <div class="accordion__title">Photography</div>
+                                        <div class="accordion__title">Фотографування</div>
                                     </div>
                                     <div class="accordion__content">
                                         <p>
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                            Cumque, ea cupiditate, dolores voluptatibus obcaecati 
-                                            mollitia temporibus exercitationem velit, est dignissimos 
-                                            non dolor veritatis praesentium impedit consequuntur! 
-                                            Eveniet placeat assumenda laborum, aliquam id facilis illum 
-                                            mollitia, quam totam sequi et voluptates.
-                                            Sit expedita assumenda laudantium voluptas quod, vitae corrupti quis odio 
-                                            adipisci perspiciatis iusto cupiditate! Facere corporis neque 
-                                            illo architecto incidunt quibusdam, inventore dicta, repellendus, 
-                                            voluptatum qu asi numquam delectus reprehenderit velit quo animi 
-                                            culpa repudiandae laborum accusantium eveniet iure possimus 
-                                            praesentium! 
+                                            Виконання фото відповідно до бажання клієнтів у різноманітних жанрах, зокрема: абстракна, потретна,
+                                            архітектурна, комерційна, концептуальна, чорно-біла, чи редакційна фотографія, фотографія подій, художня, 
+                                            плівкова та стокова фотографія. Робота із сучасними засобами обробки фото, а саме Adobe Photoshop, Adobe Lightroom.
                                         </p>
                                     </div>
                                 </div>
@@ -268,22 +234,13 @@
                                 <div class="accordion__item" onclick="this.className = (this.className == 'accordion__item' ? 'accordion__item active' : 'accordion__item')">
                                     <div class="accordion__header">
                                         <img class="accordion__icon" src="IMG/WeDo/EQUALIZER.png" alt="">
-                                        <div class="accordion__title">Creativity</div>
+                                        <div class="accordion__title">Креативність</div>
                                     </div>
                                     <div class="accordion__content">
                                         <p>
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                            Cumque, ea cupiditate, dolores voluptatibus obcaecati 
-                                            mollitia temporibus exercitationem velit, est dignissimos 
-                                            non dolor veritatis praesentium impedit consequuntur! 
-                                            Eveniet placeat assumenda laborum, aliquam id facilis illum 
-                                            mollitia, quam totam sequi et voluptates.
-                                            Sit expedita assumenda laudantium voluptas quod, vitae corrupti quis odio 
-                                            adipisci perspiciatis iusto cupiditate! Facere corporis neque 
-                                            illo architecto incidunt quibusdam, inventore dicta, repellendus, 
-                                            voluptatum qu asi numquam delectus reprehenderit velit quo animi 
-                                            culpa repudiandae laborum accusantium eveniet iure possimus 
-                                            praesentium! 
+                                            Творчий підхід до виконання завдань, та постійний пошук нешаблонних, але водночас надійних рішень.
+                                            Гнучкість новизна та корисність ідей та їх подальша реалізація. Робота із такими програмами як 
+                                            Adobe Illustrator, Adobe XD, Figma.
                                         </p>
                                     </div>
                                 </div>
@@ -291,22 +248,14 @@
                                 <div class="accordion__item" onclick="this.className = (this.className == 'accordion__item' ? 'accordion__item active' : 'accordion__item')">
                                     <div class="accordion__header">
                                         <img class="accordion__icon" src="IMG/WeDo/BULLSEYE.png" alt="">
-                                        <div class="accordion__title">Web design</div>
+                                        <div class="accordion__title">Веб-дизайн</div>
                                     </div>
                                     <div class="accordion__content">
                                         <p>
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                            Cumque, ea cupiditate, dolores voluptatibus obcaecati 
-                                            mollitia temporibus exercitationem velit, est dignissimos 
-                                            non dolor veritatis praesentium impedit consequuntur! 
-                                            Eveniet placeat assumenda laborum, aliquam id facilis illum 
-                                            mollitia, quam totam sequi et voluptates.
-                                            Sit expedita assumenda laudantium voluptas quod, vitae corrupti quis odio 
-                                            adipisci perspiciatis iusto cupiditate! Facere corporis neque 
-                                            illo architecto incidunt quibusdam, inventore dicta, repellendus, 
-                                            voluptatum qu asi numquam delectus reprehenderit velit quo animi 
-                                            culpa repudiandae laborum accusantium eveniet iure possimus 
-                                            praesentium! 
+                                            Розробка дизайну сайтів та веб-застосунків, Email-розсилок, створення макетів сайтів та окремих їх сторінок;
+                                            підготовка з нуля іконок, логотипів, ілюстрацій, банерів  згідно із врахуванням усіх вимог сучасності.
+                                            Знання і застосування на практиці типографіки, теорії кольору, розуміння принципів роботи веб-елементів, знання основних інструментів дизайну та вміння їх використовувати,
+                                            розуміння принципів адаптивного дизайну.
                                         </p>
                                     </div>
                                 </div>
@@ -324,32 +273,41 @@
                         <div data-slider>
                             <div>
                                 <div class="reviews__item" >
-                                    <img class="reviews__photo" src="IMG/Reviews/SPEECH 4.png" alt="">
+                                    <div class="reviews_photo_wrapper">
+                                        <img class="reviews__photo" src="IMG/Reviews/Steve_Jobs.png" alt="">
+                                    </div>
                                     <div class="reviews__content">
                                         <div class="reviews__text">
-                                            "Lorem ipsum, dolor sit amet consectetur 
-                                            adipisicing elit. Autem ab quod, reprehenderit 
-                                            doloremque sapiente officia modi voluptas 
-                                            aliquam esse culpa, nobis, fuga quisquam nemo 
-                                            consequuntur. Consequuntur doloribus sint 
-                                            voluptates voluptas."
+                                            "Дизайн – це не те, як предмет виглядає, а те, як він працює."
                                         </div>
-                                        <div class="reviews__author">Jon Doe</div>
+                                        <div class="reviews__author">Стів Джобс</div>
                                     </div>
                                 </div>
                             </div>
 
                             <div>
                                 <div class="reviews__item" >
-                                    <img class="reviews__photo" src="IMG/Reviews/SPEECH 4.png" alt="">
+                                    <div class="reviews__photo__wrapper">
+                                        <img class="reviews__photo" src="IMG/Reviews/Antoine_de_Saint_Exupery.jpg" alt="">
+                                    </div>
                                     <div class="reviews__content">
                                         <div class="reviews__text">
-                                            "Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                            Asperiores non perspiciatis laborum, quis reprehenderit eos voluptas! 
-                                            Deserunt voluptatibus voluptatem doloribus dolores excepturi quidem, 
-                                            iure illum repellat inventore."
+                                           "Дизайнер знає, що він досяг досконалості не тоді, коли нема чого додати, а коли нема чого прибирати."
                                         </div>
-                                        <div class="reviews__author">Alfred Smith</div>
+                                        <div class="reviews__author">Антуан де Сент-Екзюпері</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="reviews__item" >
+                                    <div class="reviews__photo__wrapper"></div>
+                                        <img class="reviews__photo" src="IMG/Reviews/Thomas_John_Watson_Sr.webp" alt="">
+                                    <div class="reviews__content">
+                                        <div class="reviews__text">
+                                           "Хороший дизайн не продасть продукту низької якості, але він дозволить відмінному продукту повністю розкрити свій потенціал."
+                                        </div>
+                                        <div class="reviews__author">Томас Джон Уотсон старший</div>
                                     </div>
                                 </div>
                             </div>
@@ -387,7 +345,6 @@
                                 <div class="about__text about__link">
                                     <a target="_blank" href="#"><img src="IMG\Meet-Our-Team\Logos\facebook.png" alt=""></a>
                                     <a target="_blank" href="#"><img src="IMG\Meet-Our-Team\Logos\twitter.png" alt=""></a>
-                                    <a target="_blank" href="#"><img src="IMG\Meet-Our-Team\Logos\pinterest.png" alt=""></a>
                                     <a target="_blank" href="#"><img src="IMG\Meet-Our-Team\Logos\instagram.png" alt=""></a>
                                 </div>
                             </div>
@@ -405,7 +362,6 @@
                             <div class="about__text about__link">
                                 <a target="_blank" href="#"><img src="IMG\Meet-Our-Team\Logos\facebook.png" alt=""></a>
                                 <a target="_blank" href="#"><img src="IMG\Meet-Our-Team\Logos\twitter.png" alt=""></a>
-                                <a target="_blank" href="#"><img src="IMG\Meet-Our-Team\Logos\pinterest.png" alt=""></a>
                                 <a target="_blank" href="#"><img src="IMG\Meet-Our-Team\Logos\instagram.png" alt=""></a>
                             </div>
                            </div>
@@ -423,7 +379,6 @@
                                 <div class="about__text about__link">
                                     <a target="_blank" href="#"><img src="IMG\Meet-Our-Team\Logos\facebook.png" alt=""></a>
                                     <a target="_blank" href="#"><img src="IMG\Meet-Our-Team\Logos\twitter.png" alt=""></a>
-                                    <a target="_blank" href="#"><img src="IMG\Meet-Our-Team\Logos\pinterest.png" alt=""></a>
                                     <a target="_blank" href="#"><img src="IMG\Meet-Our-Team\Logos\instagram.png" alt=""></a>
                                 </div>
                             </div>
@@ -434,212 +389,198 @@
                         </div>
                     </div>
                 </div>
-            </section>
-    
-            <section class="section section--gray">
-                <div class="hipster-logos">
-                    <div class="hipster__item">
-                        <img src="IMG/Hipster-logos/1.png" alt="">
-                    </div>
-                    <div class="hipster__item">
-                        <img src="IMG/Hipster-logos/2.png" alt="">
-                    </div>
-                    <div class="hipster__item">
-                        <img src="IMG/Hipster-logos/3.png" alt="">
-                    </div>
-                    <div class="hipster__item">
-                        <img src="IMG/Hipster-logos/4.png" alt="">
-                    </div>
-                    <div class="hipster__item">
-                        <img src="IMG/Hipster-logos/5.png" alt="">
-                    </div>
-                    <div class="hipster__item">
-                        <img src="IMG/Hipster-logos/6.gif" alt="">
-                    </div>
-                </div>
-            </section>
-    
+            </section>    
               <!--------------------------------SOME OF OUR WORK-------------------------------->
-              <section class="section" id="works">
-                <div class="container">
-                    <div class="section__header">
-                        <h3 class="section__suptitle">What we do</h3>
-                        <h2 class="section__title">Some of our work</h2>
-    
-                        <div class="section__text">
-                            <p>
-                              Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                              Quod odit numquam illo doloribus eligendi unde, repellendus, 
-                              maxime aperiam, hic et officiis nam minima odio! Ex ipsam mollitia aliquid et voluptatibus!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="works">
-                    <div class="works__col">
-                        <div class="works__item">
-                            <img class="works__image" src="IMG\Works\1.jpg" alt="">
-                            <div class="works__info">
-                                <img src="IMG\Works\PICTURE.png" alt="">
-                                <div class="works__title">Creatively designed</div>
-                                <div class="works__text">Lorem ipsum dolor sit amet.</div>
-                            </div>
-                        </div>
-                        <div class="works__item">
-                            <img class="works__image" src="IMG\Works\2.jpg" alt="">
-                            <div class="works__info">
-                                <img src="IMG\Works\PICTURE.png" alt="">
-                                <div class="works__title">Creatively designed</div>
-                                <div class="works__text">Lorem ipsum dolor sit amet.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="works__col">
-                        <div class="works__item">
-                            <img class="works__image" src="IMG\Works\3.jpg" alt="">
-                            <div class="works__info">
-                                <img src="IMG\Works\PICTURE.png" alt="">
-                                <div class="works__title">Creatively designed</div>
-                                <div class="works__text">Lorem ipsum dolor sit amet.</div>
-                            </div>
-                        </div>
-                        <div class="works__item">
-                            <img class="works__image" src="IMG\Works\4.jpg" alt="">
-                            <div class="works__info">
-                                <img src="IMG\Works\PICTURE.png" alt="">
-                                <div class="works__title">Creatively designed</div>
-                                <div class="works__text">Lorem ipsum dolor sit amet.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="works__col">
-                        <div class="works__item">
-                            <img class="works__image" src="IMG\Works\5.jpg" alt="">
-                            <div class="works__info">
-                                <img src="IMG\Works\PICTURE.png" alt="">
-                                <div class="works__title">Creatively designed</div>
-                                <div class="works__text">Lorem ipsum dolor sit amet.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="works__col">
-                        <div class="works__item">
-                            <img class="works__image" src="IMG\Works\6.jpg" alt="">
-                            <div class="works__info">
-                                <img src="IMG\Works\PICTURE.png" alt="">
-                                <div class="works__title">Creatively designed</div>
-                                <div class="works__text">Lorem ipsum dolor sit amet.</div>
-                            </div>
-                        </div>
-                        <div class="works__item">
-                            <img class="works__image" src="IMG\Works\7.jpg" alt="">
-                            <div class="works__info">
-                                <img src="IMG\Works\PICTURE.png" alt="">
-                                <div class="works__title">Creatively designed</div>
-                                <div class="works__text">Lorem ipsum dolor sit amet.</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </section>
-    
-                <div class="section section-review">
-                    <div class="container">
-                        <div class="reviews">
+        <section class="section" id="works">
+          <div class="container">
+              <div class="section__header">
+                  <h3 class="section__suptitle">What we do</h3>
+                  <h2 class="section__title">Some of our work</h2>
+                
+                  <div class="section__text">
+                      <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Quod odit numquam illo doloribus eligendi unde, repellendus, 
+                        maxime aperiam, hic et officiis nam minima odio! Ex ipsam mollitia aliquid et voluptatibus!
+                      </p>
+                  </div>
+              </div>
+          </div>
+          <div class="works">
+              <div class="works__col">
+                  <div class="works__item">
+                      <img class="works__image" src="IMG\Works\1.jpg" alt="">
+                      <div class="works__info">
+                          <img src="IMG\Works\PICTURE.png" alt="">
+                          <div class="works__title">Creatively designed</div>
+                          <div class="works__text">Lorem ipsum dolor sit amet.</div>
+                      </div>
+                  </div>
+                  <div class="works__item">
+                      <img class="works__image" src="IMG\Works\2.jpg" alt="">
+                      <div class="works__info">
+                          <img src="IMG\Works\PICTURE.png" alt="">
+                          <div class="works__title">Creatively designed</div>
+                          <div class="works__text">Lorem ipsum dolor sit amet.</div>
+                      </div>
+                  </div>
+              </div>
+              <div class="works__col">
+                  <div class="works__item">
+                      <img class="works__image" src="IMG\Works\3.jpg" alt="">
+                      <div class="works__info">
+                          <img src="IMG\Works\PICTURE.png" alt="">
+                          <div class="works__title">Creatively designed</div>
+                          <div class="works__text">Lorem ipsum dolor sit amet.</div>
+                      </div>
+                  </div>
+                  <div class="works__item">
+                      <img class="works__image" src="IMG\Works\4.jpg" alt="">
+                      <div class="works__info">
+                          <img src="IMG\Works\PICTURE.png" alt="">
+                          <div class="works__title">Creatively designed</div>
+                          <div class="works__text">Lorem ipsum dolor sit amet.</div>
+                      </div>
+                  </div>
+              </div>
+              <div class="works__col">
+                  <div class="works__item">
+                      <img class="works__image" src="IMG\Works\5.jpg" alt="">
+                      <div class="works__info">
+                          <img src="IMG\Works\PICTURE.png" alt="">
+                          <div class="works__title">Creatively designed</div>
+                          <div class="works__text">Lorem ipsum dolor sit amet.</div>
+                      </div>
+                  </div>
+              </div>
+              <div class="works__col">
+                  <div class="works__item">
+                      <img class="works__image" src="IMG\Works\6.jpg" alt="">
+                      <div class="works__info">
+                          <img src="IMG\Works\PICTURE.png" alt="">
+                          <div class="works__title">Creatively designed</div>
+                          <div class="works__text">Lorem ipsum dolor sit amet.</div>
+                      </div>
+                  </div>
+                  <div class="works__item">
+                      <img class="works__image" src="IMG\Works\7.jpg" alt="">
+                      <div class="works__info">
+                          <img src="IMG\Works\PICTURE.png" alt="">
+                          <div class="works__title">Creatively designed</div>
+                          <div class="works__text">Lorem ipsum dolor sit amet.</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          </section>
         
-                            <div data-slider>
-                                <div>
-                                    <div class="reviews__item">
-                                        <img class="reviews__photo circle-photo" src="IMG\Works\reviews-logo.png" alt="">
-                                        <div class="reviews__content">
-                                            <div class="reviews__text">
-                                                "Lorem ipsum, dolor sit amet consectetur 
-                                                adipisicing elit. Autem ab quod, reprehenderit 
-                                                doloremque sapiente officia modi voluptas 
-                                                aliquam esse culpa, nobis, fuga quisquam nemo 
-                                                consequuntur. Consequuntur doloribus sint 
-                                                voluptates voluptas."
-                                            </div>
-                                            <div class="reviews__author">Joshua Earle</div>
-                                        </div>
+          <div class="section section-review">
+              <div class="container">
+                  <div class="reviews">
+                    
+                      <div data-slider>
+                          <div>
+                              <div class="reviews__item">
+                                    <div class="reviews__photo__wrapper">
+                                        <img class="reviews__photo circle-photo" src="IMG/Reviews/Henri_Cartier-Bresson.jpg" alt="">
                                     </div>
-                                </div>
+                                    <div class="reviews__content">
+                                        <div class="reviews__text">
+                                            Роблячи знімок, ти начебто пишеш картину, але за одну секунду.
+                                        </div>
+                                    <div class="reviews__author">Анрі Картьє-Брессон</div>
+                                    </div>
+                              </div>
+                          </div>
+                        
+                          <div>
+                              <div class="reviews__item">
+                                 <div class="reviews__photo__wrapper">
+                                    <img class="reviews__photo circle-photo" src="IMG/Reviews/Ansel_Adams.jpg" alt="">
+                                 </div>
+                                  <div class="reviews__content">
+                                      <div class="reviews__text">
+                                            Немає правил хорошої фотографії, є просто самі хороші фотографії
+                                      </div>
+                                      <div class="reviews__author">Ансель Адамс</div>
+                                  </div>
+                              </div>
+                          </div>
 
-                                <div>
-                                    <div class="reviews__item">
-                                        <img class="reviews__photo circle-photo" src="IMG\Works\reviews-logo.png" alt="">
-                                        <div class="reviews__content">
-                                            <div class="reviews__text">
-                                                "Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                                Voluptate adipisci aliquid sed. Sapiente provident eius accusamus eveniet 
-                                                tempora perspiciatis, voluptas excepturi maxime quidem quas corrupti quia. 
-                                                Maiores repudiandae nostrum magni vero odio aliquid neque asperiores."
-                                            </div>
-                                            <div class="reviews__author">Nick Jefferson</div>
-                                        </div>
+                          <div>
+                            <div class="reviews__item">
+                                <div class="reviews__photo__wrapper">
+                                    <img class="reviews__photo circle-photo" src="IMG/Reviews/Edward_Wenston.jpg" alt="">
+                                </div>
+                                <div class="reviews__content">
+                                    <div class="reviews__text">
+                                        Фотограф ізолює та зберігає момент часу: важливий чи незначний, залежить від розуміння теми фотографом та його майстерності.
                                     </div>
+                                    <div class="reviews__author">Едвард Уестон</div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-    
-              <!--------------------------------HAPPY CLIENTS-------------------------------->
-                <section class="section Happy-Clients">
-                    <div class="container">
-                        <div class="section__header">
-                            <h3 class="section__suptitle">Happy Clients</h3>
-                            <h2 class="section__title">What people say</h2>
-                        </div>
-    
-                        <div class="clients">
-                            <div class="clients__item">
-                                <img class="clients__photo" src="IMG\What-People-Say\Clients\1.png" alt="">
-                                <div class="clients__content">
-                                    <div class="clients__name">Matthew Dix</div>
-                                    <div class="clients__profession">Graphic Design</div>
-                                    <div class="clients__text">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Voluptatem, necessitatibus sed distinctio dicta laboriosam ea.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="clients__item">
-                                <img class="clients__photo" src="IMG\What-People-Say\Clients\2.png" alt="">
-                                <div class="clients__content">
-                                    <div class="clients__name">Nick Karvounis</div>
-                                    <div class="clients__profession">Graphic Design</div>
-                                    <div class="clients__text">
-                                       Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                                       Officiis, tenetur eaque ipsa pariatur eligendi aperiam.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="clients__item">
-                                <img class="clients__photo" src="IMG\What-People-Say\Clients\3.png" alt="">
-                                <div class="clients__content">
-                                    <div class="clients__name">Jaelynn Castillo</div>
-                                    <div class="clients__profession">Graphic Design</div>
-                                    <div class="clients__text">
-                                       Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                       Unde ab dignissimos voluptatem sapiente vel neque.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="clients__item">
-                                <img class="clients__photo" src="IMG\What-People-Say\Clients\4.png" alt="">
-                                <div class="clients__content">
-                                    <div class="clients__name">Mike Petrucci</div>
-                                    <div class="clients__profession">Graphic Design</div>
-                                    <div class="clients__text">
-                                       Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                                       Labore, saepe nisi magnam voluptas distinctio eum.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        
+        <!--------------------------------HAPPY CLIENTS-------------------------------->
+          <section class="section Happy-Clients">
+              <div class="container">
+                  <div class="section__header">
+                      <h3 class="section__suptitle">Happy Clients</h3>
+                      <h2 class="section__title">What people say</h2>
+                  </div>
+                
+                  <div class="clients">
+                      <div class="clients__item">
+                          <img class="clients__photo" src="IMG\What-People-Say\Clients\1.png" alt="">
+                          <div class="clients__content">
+                              <div class="clients__name">Matthew Dix</div>
+                              <div class="clients__profession">Graphic Design</div>
+                              <div class="clients__text">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                  Voluptatem, necessitatibus sed distinctio dicta laboriosam ea.
+                              </div>
+                          </div>
+                      </div>
+                      <div class="clients__item">
+                          <img class="clients__photo" src="IMG\What-People-Say\Clients\2.png" alt="">
+                          <div class="clients__content">
+                              <div class="clients__name">Nick Karvounis</div>
+                              <div class="clients__profession">Graphic Design</div>
+                              <div class="clients__text">
+                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                 Officiis, tenetur eaque ipsa pariatur eligendi aperiam.
+                              </div>
+                          </div>
+                      </div>
+                      <div class="clients__item">
+                          <img class="clients__photo" src="IMG\What-People-Say\Clients\3.png" alt="">
+                          <div class="clients__content">
+                              <div class="clients__name">Jaelynn Castillo</div>
+                              <div class="clients__profession">Graphic Design</div>
+                              <div class="clients__text">
+                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                 Unde ab dignissimos voluptatem sapiente vel neque.
+                              </div>
+                          </div>
+                      </div>
+                      <div class="clients__item">
+                          <img class="clients__photo" src="IMG\What-People-Say\Clients\4.png" alt="">
+                          <div class="clients__content">
+                              <div class="clients__name">Mike Petrucci</div>
+                              <div class="clients__profession">Graphic Design</div>
+                              <div class="clients__text">
+                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                 Labore, saepe nisi magnam voluptas distinctio eum.
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
     
             <!--------------------------------BLOG-------------------------------->
             <section class="section" id="blog">
@@ -749,7 +690,7 @@
                 <div class="container">
                     <div class="footer__inner">
                         <div class="footer__col footer__col--first">
-                            <div class="footer__logo">MoGo</div>
+                            <div class="footer__logo">DmyYarMar</div>
                             <div class="footer__text">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                                 Totam nihil voluptate blanditiis quos obcaecati, exercitationem 
@@ -759,7 +700,6 @@
     
                             <div class="footer__social">
                                 <div class="footer__social-header">
-                                    <b>15k</b> followers
                                 </div>
                                 <div class="footer__social-content">
                                     <span>Follow us:</span>
@@ -781,20 +721,9 @@
                                         </a>
         
                                         <a target="_blank" href="#">
-                                            <img src="IMG\Footer\Social-icons\google plus.png" alt="">
-                                        </a>
-        
-                                        <a target="_blank" href="#">
                                             <img src="IMG\Footer\Social-icons\youtube.png" alt="">
                                         </a>
         
-                                        <a target="_blank" href="#">
-                                            <img src="IMG\Footer\Social-icons\dribbble.png" alt="">
-                                        </a>
-        
-                                        <a target="_blank" href="#">
-                                            <img src="IMG\Footer\Social-icons\tumblr.png" alt="">
-                                        </a>
                                     </span>
                                 </div>
                             </div>
@@ -882,7 +811,7 @@
                     </div>
     
                     <div class="copyright">
-                        © 2016 MoGo free PSD template by <span>Laaqiq</span>
+                        © 2022 DmyYarMar <span>cooperation</span>
                     </div>
                 </div>
             </footer>
