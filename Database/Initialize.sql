@@ -23,8 +23,8 @@ CREATE TABLE Articles(
     AddedTime DATETIME NOT NULL
 );
 
-INSERT INTO Articles(Title, Annotation, Image, Text, AddedTime) VALUES('First Article','Short Desription Of first Article','first.jpg','This is the first article and it will not be the last.', '01/01/2023');
-INSERT INTO Articles(Title, Annotation, Image, Text, AddedTime) VALUES('Last Article','Not so short Desription Of last Article','last.jpg','This is the last article and we are very sad about it.', '01/01/2022');
+INSERT INTO Articles(Title, Annotation, Image, Text, AddedTime) VALUES('First Article','Short Desription Of first Article','first.jpg','This is the first article and it will not be the last.', '2023-01-01');
+INSERT INTO Articles(Title, Annotation, Image, Text, AddedTime) VALUES('Last Article','Not so short Desription Of last Article','last.jpg','This is the last article and we are very sad about it.', '2022-01-01');
 
 CREATE TABLE Albums(
 	ID INT PRIMARY KEY AUTO_INCREMENT,
@@ -59,4 +59,4 @@ CREATE TABLE Users(
     DOB DATETIME
 );
 
-INSERT INTO Users(Username, Pass, Email, DOB) VALUES('admin', 'admin', 'admin@admin.com', '01/01/2001');
+INSERT INTO Users(Username, Pass, Email, DOB) VALUES('admin', 'admin', 'admin@admin.com', '2001-01-01');
