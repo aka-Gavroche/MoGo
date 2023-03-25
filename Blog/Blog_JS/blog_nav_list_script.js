@@ -62,29 +62,3 @@ function getScroll5() {
         behavior: "smooth"
     });
 };
-
-// //Шосте посилання
-// const suptitleItem6 = document.querySelector ('#suptitleItem6');
-// const block6 = document.querySelector ('.block6');
-
-// suptitleItem6.addEventListener ('click', getScroll6); 
-
-// function getScroll6() {
-//     block6.scrollIntoView({
-//         block: "center",
-//         behavior: "smooth"
-//     });
-// };
-
-// //Сьоме посилання
-// const suptitleItem7 = document.querySelector ('#suptitleItem7');
-// const block7 = document.querySelector ('.block7');
-
-// suptitleItem7.addEventListener ('click', getScroll7); 
-
-// function getScroll7() {
-//     block7.scrollIntoView({
-//         block: "center",
-//         behavior: "smooth"
-//     });
-// };
