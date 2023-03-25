@@ -15,7 +15,6 @@ $(function(){
 
     function checkScroll(scrollOffset) {
 
-        console.log (scrollOffset);
        if(scrollOffset >= introH) {
             header.addClass("fixed");
        } else {

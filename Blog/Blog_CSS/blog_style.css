@@ -25,7 +25,53 @@ body {
     /* background: url("../IMG/StartScreen.jpg") 50%/cover no-repeat fixed; */
     
     background: url('../../IMG/Intro.jpg') center/cover no-repeat fixed;
-    
+}
+
+.main_wrapper {
+    height: 100vh;
+    overflow-y: scroll;
+    position: relative;
+    z-index: 500;
+}
+
+/*----------Video---------- */
+.video_wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.video_wrapper::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+    /* background-image:linear-gradient(180deg, rgba(243,129,129,0.7) 0%, rgba(252,227,138,0.1) 100%); */
+}
+
+.video {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video_media {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
 }
 
 .table_wrapper {
@@ -64,7 +110,7 @@ table th {
 header {
     margin: 0 auto;
     padding: 10px 0 13px;
-    background-color: #e88283;
+    background-color: hsla(359, 69%, 71%, 0.75);
     box-shadow: 0px 0px 8px 3px #000000;
 
     color: #fff;
@@ -96,6 +142,9 @@ header {
 .suptitle_text {
     padding: 2px 0;
     transition: 0.3s;
+
+    position: relative;
+    z-index: 500;
 }
 
 /* .suptitle_text--second {
@@ -116,7 +165,6 @@ header {
 } */
 
 .suptitle_text:hover {
-    box-shadow: 0px 0px 8px 3px #000000;
     color: #95e1d3;
     transition: 0.3s; 
 }
@@ -267,6 +315,7 @@ h2 {
 
 .top_button {
     position: fixed;
+    z-index: 500;
     bottom: 25px;
     right: 25px;
 
@@ -275,7 +324,7 @@ h2 {
     border-radius: 50%;
     background-color: #ababab3d;
     box-shadow: 0px 0px 8px 4px #000000;
-    display: none;
+    /* display: none; */
 
     cursor: pointer;
 
@@ -331,6 +380,9 @@ hr {
     max-width: 50px;
     border-bottom: 5px solid #fff;
     transition: 0.4s;
+
+    position: relative;
+    z-index: 500;
 }
 
 /*--------------------Списки--------------------*/
@@ -382,6 +434,8 @@ a {
     color: inherit;
     text-decoration: none;
     transition: 0.4s;
+    position: relative;
+    z-index: 500;
 }
 
 .main_page_link:hover {
@@ -402,7 +456,7 @@ a {
     margin: 35px auto;
     max-width: 1200px;
     padding: 30px 45px;
-    background-color: #ffffff;
+    background-color: #ffffffbf;
     box-shadow: 0px 0px 8px 2px #000000;
 
     font-size: 20px; 
@@ -417,6 +471,7 @@ a {
 
 .block-content {
     width: 100%;
+    line-height: 1.5;
 }
 
 .main_page:hover {
@@ -440,22 +495,23 @@ a {
 /*----------Сторінка статті блогу----------*/
 .article_background {
     margin: 35px auto;
-    max-width: 1200px;
-    
-    max-height: 100%;
-    background-color: #ffffff;
+    width: 100%;
+    height: 500px;
+    background-color: #ffffffbf;
     box-shadow: 0px 0px 8px 2px #000000;
+
     font-size: 20px;
     line-height: 1.2;
     transition: 0.3s;
-    overflow: hidden;
+
+    overflow-y: hidden;
 }
 
 .article_background h3 {
     padding: 15px 0;  
 }
 
-.block-content img {
+.article_background img {
     display: block;
     margin: 0 auto;
     width: 100%;

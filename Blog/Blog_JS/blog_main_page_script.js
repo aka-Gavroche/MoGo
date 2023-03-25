@@ -1,5 +1,22 @@
+//----------------------------------------Кнопка скролу вверх----------------------------------------
 //оголошуємо константу goTopBtn і закидуємо в неї наш об'єкт по його класу
 const goTopBtn = document.querySelector (".top_button");
+
+//прикріплюємо на нашу константу обробник подій: при натисканні виконується функція goTop
+goTopBtn.addEventListener ('click', goTop); 
+
+//закидуємо у константу головну обгортку сайту
+const wrapperWindow = document.querySelector (".main_wrapper");
+
+//описуємо функцію goTop
+function goTop () {
+    if (window.pageYOffset > 0) {//якщо позиція скролу більша за 0, то піднятись догори на 100 одиниць
+        window.scrollBy (0, -100);
+        setTimeout(goTop, 0); //робимо рекурсію цієї функції, доки позиція скролу не дорівнюватиме 0.
+    }
+}
+
+//--------------------------------------------------------------------------------------------------
 
 //оголошуємо константу suptitleFixed і закидуємо в неї наш об'єкт по його класу
 const suptitleFixed = document.querySelector ('.suptitle'); 
@@ -17,8 +34,6 @@ const suptitleList = document.querySelector('.suptitle_list');
 const closeButton = document.querySelector('.close_button');
 
 
-//прикріплюємо на нашу константу обробник подій: при натисканні виконується функція goTop
-goTopBtn.addEventListener ('click', goTop); 
 
 //прикріплюємо на вікно обробник подій: при скролі виконується функція trackScroll
 window.addEventListener ('scroll', trackScroll);
@@ -29,8 +44,8 @@ suptitleText.addEventListener ('click', showSuptitleList);
 //прикріплюємо на нашу константу обробник подій: при натисканні виконується функція showSuptitleList
 suptitleText2.addEventListener ('click', showSuptitleList);
 
-//прикріплюємо на нашу константу обробник подій: при натисканні виконується функція showSuptitleList
-closeButton.addEventListener ('click', showSuptitleList);
+// //прикріплюємо на нашу константу обробник подій: при натисканні виконується функція showSuptitleList
+// closeButton.addEventListener ('click', showSuptitleList);
 
 //описуємо функцію trackScroll 
 function trackScroll () {
@@ -49,15 +64,6 @@ function trackScroll () {
 
     suptitleFixed.classList.remove("suptitle--show");
    }
-}
-
-
-//описуємо функцію goTop
-function goTop () {
-    if (window.pageYOffset > 0) {//якщо позиція скролу більша за 0, то піднятись догори на 100 одиниць
-        window.scrollBy (0, -100);
-        setTimeout(goTop, 0); //робимо рекурсію цієї функції, доки позиція скролу не дорівнюватиме 0.
-    }
 }
 
 //описуємо функцію showSuptitleList

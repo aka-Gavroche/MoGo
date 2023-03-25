@@ -23,20 +23,19 @@
     <link rel="stylesheet" href="CSS\style.css">
     <!-----Іконка вкладки сайту----->
     <link rel="shortcut icon" href="IMG/favicon.ico">
-    <title>DmyYarMar</title>
+    <title>DYMAR</title>
 </head>
 <body>
     <!--------------------------------INTRO-------------------------------->
         <header id="header">
            <div class="container">
                 <div class="header__inner">
-                    <div class="header_logo" data-scroll="#intro">DmyYarMar</div>
+                    <div class="header_logo" data-scroll="#intro">DYMAR</div>
 
                     <nav class="header_nav" id="nav">
                         <a class="nav__link" href="#" data-scroll="#about">About</a>
                         <a class="nav__link" href="#" data-scroll="#services">Service</a>
-                        <a class="nav__link" href="#" data-scroll="#blog">Blog</a>
-                        <a class="nav__link" href="#" data-scroll="#works">Work</a> <!--Закинути посилання на альбом робіт!!!-->
+                        <a class="nav__link" href="#" data-scroll="#works">Work</a> 
                         <a class="nav__link" href="#" data-scroll="#footer">Contact</a>
                     </nav>
 
@@ -47,29 +46,33 @@
            </div>
         </header>
 
-        <div class="intro" id="intro">
-            <div class="container">
-                <div class="intro__inner">
-                    <h2 class="intro__suptitle">Творчість. Ентузіазм</h2>
-                    <h1 class="intro__title">DYMar</h1>
-    
-                    <!-- <div class="button__block">
-                        <a class="intro__button" href="#">Learn More</a>
-                    </div> -->
+        
+            <div class="intro" id="intro">
+
+                <div class="video_wrapper">
+                    <div class="video">
+                        <video class="video_media" src="IMG/video.mp4" autoplay muted loop>
+                            
+                        </video>
+                    </div>
+                </div>
+                
+                <div class="container">
+                    <div class="intro__inner">
+                        <h2 class="intro__suptitle">Творчість. Ентузіазм</h2>
+                        <h1 class="intro__title">Dymar</h1>
+                    </div>
+                </div>
+        
+                <div class="slider">
+                   <div class="container"> 
+                        <div class="slider__inner">
+                            <a href="Blog\blog_main_page.html" class="slider__item intro__button"><b>01</b> <span class="slider__text">Блог</span></a>
+                            <a href="Gallery\Gallery_main_page.html" class="slider__item intro__button"><b>02</b> <span class="slider__text">Галерея</span></a>
+                        </div>
+                   </div>
                 </div>
             </div>
-
-            <div class="slider">
-               <div class="container"> 
-                    <div class="slider__inner">
-                        <a href="Blog\blog_main_page.html" target="_blank" class="slider__item intro__button"><b>01</b> <span class="slider__text">Блог</span></a>
-                        <a href="Gallery\Gallery_main_page.html" class="slider__item intro__button"><b>02</b> <span class="slider__text">Галерея</span></a>
-                    </div>
-               </div>
-            </div>
-
-
-        </div>
 
         
         <!--------------------------------STORY ABOUT US-------------------------------->
@@ -114,15 +117,16 @@
                 </div>
             </div>
         </section>
+        
         <div class="statistics">
             <div class="container">
                 <div class="stat">
                     <div class="stat__item">
-                        <div class="stat__count">38</div>
+                        <div class="stat__count">13</div>
                         <div class="stat__text">Успішних проектів</div>
                     </div>
                     <div class="stat__item">
-                        <div class="stat__count">150</div>
+                        <div class="stat__count">39</div>
                         <div class="stat__text">Задоволених клієнтів</div>
                     </div>
                     <div class="stat__item">
@@ -134,8 +138,8 @@
                         <div class="stat__text">Чашок кави</div>
                     </div>
                     <div class="stat__item">
-                        <div class="stat__count">13</div>
-                        <div class="stat__text">Учасників</div>
+                        <div class="stat__count">3</div>
+                        <div class="stat__text">Учасника</div>
                     </div>
                 </div>
             </div>
@@ -213,7 +217,7 @@
     
                     <div class="wedo">
                         <div class="wedo__item wedo--item--img">
-                            <img class="wedo__img" src="IMG/WeDo/img.jpg" alt="">
+                            <img class="wedo__img" src="IMG/WeDo/img.png" alt="">
                         </div>
                         <div class="wedo__item wedo--item--accordion">
                             <div class="accordion">
@@ -320,18 +324,16 @@
             <section class="section">
                 <div class="container">
                     <div class="section__header">
-                        <h3 class="section__suptitle">Who we are</h3>
-                        <h2 class="section__title">Meet our team</h2>
+                        <h3 class="section__suptitle">Хто ми?</h3>
+                        <h2 class="section__title">Команда</h2>
     
                         <div class="section__text">
                             <p>
-                                Lorem ipsum dolor sit amet consectetur 
-                                adipisicing elit. Expedita natus numquam 
-                                molestiae odio debitis ut qui magni molestias 
-                                suscipit cupiditate dolore, consequatur quia, 
-                                accusamus mollitia necessitatibus deserunt 
-                                distinctio, maxime repellat temporibus dolorem 
-                                consectetur. Quis, debitis.
+                                Наша команда складається з молодих, мотивованих спеціалістів,
+                                які готові з відданістю та ентузіазмом працювати над кожним 
+                                проектом, аби в результаті створити продукт високої якості.
+                                Ви цінуємо командну роботу, відкритість і чесність у спілкуванні, 
+                                а також прагнемо постійного розвитку та поліпшення нашої роботи.
                             </p>
                         </div>
                     </div>
@@ -340,17 +342,19 @@
                         <div class="about__item">
                             <div class="about__inner">
                                 <div class="about__image">
-                                    <img src="IMG/Meet-Our-Team/Mathew Dix.jpg" alt="">
+                                    <img src="IMG/Meet-Our-Team/Yuriy.jpg" alt="">
                                 </div>
                                 <div class="about__text about__link">
-                                    <a target="_blank" href="#"><img src="IMG\Meet-Our-Team\Logos\facebook.png" alt=""></a>
-                                    <a target="_blank" href="#"><img src="IMG\Meet-Our-Team\Logos\twitter.png" alt=""></a>
-                                    <a target="_blank" href="#"><img src="IMG\Meet-Our-Team\Logos\instagram.png" alt=""></a>
+                                    <div class="about__link__wrapper">
+                                        <!-- <a target="_blank" href="#"><img src="IMG\Meet-Our-Team\Logos\facebook.png" alt=""></a>
+                                        <a target="_blank" href="#"><img src="IMG\Meet-Our-Team\Logos\twitter.png" alt=""></a> -->
+                                        <a target="_blank" href="https://www.instagram.com/dmitriv.molfar/"><img src="IMG\Meet-Our-Team\Logos\instagram.png" alt=""></a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="about__info">
-                                <div class="about__name">Matthew Dix</div>
-                                <div class="about__profession">Graphic Design</div>
+                                <div class="about__name">Юрій Дмитрів</div>
+                                <div class="about__profession">SEO-спеціаліст. QA/QC Тестувальник.</div>
                             </div>
                         </div>
     
@@ -360,31 +364,35 @@
                                 <img src="IMG/Meet-Our-Team/Christopher Campbell.jpg" alt="">
                             </div>
                             <div class="about__text about__link">
-                                <a target="_blank" href="#"><img src="IMG\Meet-Our-Team\Logos\facebook.png" alt=""></a>
-                                <a target="_blank" href="#"><img src="IMG\Meet-Our-Team\Logos\twitter.png" alt=""></a>
-                                <a target="_blank" href="#"><img src="IMG\Meet-Our-Team\Logos\instagram.png" alt=""></a>
+                                <div class="about__link__wrapper">
+                                    <!-- <a target="_blank" href="#"><img src="IMG\Meet-Our-Team\Logos\facebook.png" alt=""></a>
+                                    <a target="_blank" href="#"><img src="IMG\Meet-Our-Team\Logos\twitter.png" alt=""></a> -->
+                                    <a target="_blank" href="https://www.instagram.com/a_yaremyn/"><img src="IMG\Meet-Our-Team\Logos\instagram.png" alt=""></a>
+                                </div>
                             </div>
                            </div>
                            <div class="about__info">
-                                <div class="about__name">Christopher Campbell</div>
-                                <div class="about__profession">Branding/UX design</div>
+                                <div class="about__name">Арсен Яремин</div>
+                                <div class="about__profession">Технічний керівник. Backend-розробник.</div>
                             </div>
                         </div>
     
                         <div class="about__item">
                             <div class="about__inner">
                                 <div class="about__image">
-                                    <img src="IMG/Meet-Our-Team/Michael Fertig.jpg" alt="">
+                                    <img src="IMG/Meet-Our-Team/Serhii.jpg" alt="">
                                 </div>
                                 <div class="about__text about__link">
-                                    <a target="_blank" href="#"><img src="IMG\Meet-Our-Team\Logos\facebook.png" alt=""></a>
-                                    <a target="_blank" href="#"><img src="IMG\Meet-Our-Team\Logos\twitter.png" alt=""></a>
-                                    <a target="_blank" href="#"><img src="IMG\Meet-Our-Team\Logos\instagram.png" alt=""></a>
+                                    <div class="about__link__wrapper">
+                                        <a target="_blank" href="https://www.facebook.com/profile.php?id=100045851529622"><img src="IMG\Meet-Our-Team\Logos\facebook.png" alt=""></a>
+                                        <a target="_blank" href="https://twitter.com/marchuk_serhii"><img src="IMG\Meet-Our-Team\Logos\twitter.png" alt=""></a>
+                                        <a target="_blank" href="https://www.instagram.com/a.k.a.gavroche/"><img src="IMG\Meet-Our-Team\Logos\instagram.png" alt=""></a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="about__info">
-                                <div class="about__name">Michael Fertig </div>
-                                <div class="about__profession">Developer</div>
+                                <div class="about__name">Сергій Марчук</div>
+                                <div class="about__profession">Фотограф. Веб-дизайнер. Frontend-розробник.</div>
                             </div>
                         </div>
                     </div>
@@ -394,14 +402,12 @@
         <section class="section" id="works">
           <div class="container">
               <div class="section__header">
-                  <h3 class="section__suptitle">What we do</h3>
-                  <h2 class="section__title">Some of our work</h2>
+                  <h3 class="section__suptitle">Зразки</h3>
+                  <h2 class="section__title">Деякі наші роботи</h2>
                 
                   <div class="section__text">
                       <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        Quod odit numquam illo doloribus eligendi unde, repellendus, 
-                        maxime aperiam, hic et officiis nam minima odio! Ex ipsam mollitia aliquid et voluptatibus!
+                        Окремі фото із завершених для клієнтів проектів, що виконані у різноманітних жанрах фотографії.
                       </p>
                   </div>
               </div>
@@ -412,16 +418,14 @@
                       <img class="works__image" src="IMG\Works\1.jpg" alt="">
                       <div class="works__info">
                           <img src="IMG\Works\PICTURE.png" alt="">
-                          <div class="works__title">Creatively designed</div>
-                          <div class="works__text">Lorem ipsum dolor sit amet.</div>
+                          <div class="works__title">Пейзажне фото</div>
                       </div>
                   </div>
                   <div class="works__item">
                       <img class="works__image" src="IMG\Works\2.jpg" alt="">
                       <div class="works__info">
                           <img src="IMG\Works\PICTURE.png" alt="">
-                          <div class="works__title">Creatively designed</div>
-                          <div class="works__text">Lorem ipsum dolor sit amet.</div>
+                          <div class="works__title">Концептуальне фото</div>
                       </div>
                   </div>
               </div>
@@ -430,16 +434,14 @@
                       <img class="works__image" src="IMG\Works\3.jpg" alt="">
                       <div class="works__info">
                           <img src="IMG\Works\PICTURE.png" alt="">
-                          <div class="works__title">Creatively designed</div>
-                          <div class="works__text">Lorem ipsum dolor sit amet.</div>
+                          <div class="works__title">Абстрактне фото</div>
                       </div>
                   </div>
                   <div class="works__item">
                       <img class="works__image" src="IMG\Works\4.jpg" alt="">
                       <div class="works__info">
                           <img src="IMG\Works\PICTURE.png" alt="">
-                          <div class="works__title">Creatively designed</div>
-                          <div class="works__text">Lorem ipsum dolor sit amet.</div>
+                          <div class="works__title">Предметне фото</div>
                       </div>
                   </div>
               </div>
@@ -448,8 +450,7 @@
                       <img class="works__image" src="IMG\Works\5.jpg" alt="">
                       <div class="works__info">
                           <img src="IMG\Works\PICTURE.png" alt="">
-                          <div class="works__title">Creatively designed</div>
-                          <div class="works__text">Lorem ipsum dolor sit amet.</div>
+                          <div class="works__title">Художнє фото</div>
                       </div>
                   </div>
               </div>
@@ -458,16 +459,14 @@
                       <img class="works__image" src="IMG\Works\6.jpg" alt="">
                       <div class="works__info">
                           <img src="IMG\Works\PICTURE.png" alt="">
-                          <div class="works__title">Creatively designed</div>
-                          <div class="works__text">Lorem ipsum dolor sit amet.</div>
+                          <div class="works__title">Потретне фото</div>
                       </div>
                   </div>
                   <div class="works__item">
                       <img class="works__image" src="IMG\Works\7.jpg" alt="">
                       <div class="works__info">
                           <img src="IMG\Works\PICTURE.png" alt="">
-                          <div class="works__title">Creatively designed</div>
-                          <div class="works__text">Lorem ipsum dolor sit amet.</div>
+                          <div class="works__title">Архітектурне фото</div>
                       </div>
                   </div>
               </div>
@@ -525,56 +524,56 @@
               </div>
           </div>
         
-        <!--------------------------------HAPPY CLIENTS-------------------------------->
+        <!-- ------------------------------HAPPY CLIENTS-------------------------------->
           <section class="section Happy-Clients">
               <div class="container">
                   <div class="section__header">
-                      <h3 class="section__suptitle">Happy Clients</h3>
-                      <h2 class="section__title">What people say</h2>
+                      <h3 class="section__suptitle">Відгуки</h3>
+                      <h2 class="section__title">Щасливі клієнти</h2>
                   </div>
                 
                   <div class="clients">
                       <div class="clients__item">
-                          <img class="clients__photo" src="IMG\What-People-Say\Clients\1.png" alt="">
+                          <img class="clients__photo" src="IMG/What-People-Say/Clients/Pavlo_Leskovich.jpg" alt="">
                           <div class="clients__content">
-                              <div class="clients__name">Matthew Dix</div>
-                              <div class="clients__profession">Graphic Design</div>
+                              <div class="clients__name">Павло Лескович</div>
+                              <div class="clients__profession">Python-розробник</div>
                               <div class="clients__text">
-                                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                  Voluptatem, necessitatibus sed distinctio dicta laboriosam ea.
+                                Як щасливий клієнт DYMAR, хочу подякувати цій молодій команді за їхню якісну та вчасно виконану роботу. 
+                                Особлива вдячність за дивовижну підтримку проекту, що відповідає всім моїм потребам!
                               </div>
                           </div>
                       </div>
                       <div class="clients__item">
-                          <img class="clients__photo" src="IMG\What-People-Say\Clients\2.png" alt="">
+                          <img class="clients__photo" src="IMG/What-People-Say/Clients/Lyudmila.jpg" alt="">
                           <div class="clients__content">
-                              <div class="clients__name">Nick Karvounis</div>
-                              <div class="clients__profession">Graphic Design</div>
+                              <div class="clients__name">Людмила Сологубовська</div>
+                              <div class="clients__profession">Digital-художник</div>
                               <div class="clients__text">
-                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                                 Officiis, tenetur eaque ipsa pariatur eligendi aperiam.
+                                Відповідальне виконання та врахування всіх нюансів під час роботи над проектом.  Рекомендую DYMAR. З ними чудово працювати. 
+                                Трафік мого веб-сайту збільшився завдяки їхній програмі SEO.
                               </div>
                           </div>
                       </div>
                       <div class="clients__item">
-                          <img class="clients__photo" src="IMG\What-People-Say\Clients\3.png" alt="">
+                          <img class="clients__photo" src="IMG/What-People-Say/Clients/UlyanaShlapak.jpg" alt="">
                           <div class="clients__content">
-                              <div class="clients__name">Jaelynn Castillo</div>
-                              <div class="clients__profession">Graphic Design</div>
+                              <div class="clients__name">Уляна Шлапак</div>
+                              <div class="clients__profession">Барбер</div>
                               <div class="clients__text">
-                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                 Unde ab dignissimos voluptatem sapiente vel neque.
+                                    Перший досвід співпраці з DYMAR і він виправдав себе. Свіжі ідеї та їх чудова реалізація.  
+                                    Команда віддана своїй справі, працює якісно та ефективно! 
                               </div>
                           </div>
                       </div>
                       <div class="clients__item">
-                          <img class="clients__photo" src="IMG\What-People-Say\Clients\4.png" alt="">
+                          <img class="clients__photo" src="IMG/What-People-Say/Clients/Roza_Folts.jpg" alt="">
                           <div class="clients__content">
-                              <div class="clients__name">Mike Petrucci</div>
-                              <div class="clients__profession">Graphic Design</div>
+                              <div class="clients__name">Роза Фольц</div>
+                              <div class="clients__profession">Маркетолог</div>
                               <div class="clients__text">
-                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                                 Labore, saepe nisi magnam voluptas distinctio eum.
+                                Команда DYMAR значно перевершила мої очікування в усіх відношеннях. 
+                                Послідовний та творчий підхід до роботи на кожному етапі розробки проекту!
                               </div>
                           </div>
                       </div>
@@ -583,7 +582,7 @@
           </section>
     
             <!--------------------------------BLOG-------------------------------->
-            <section class="section" id="blog">
+            <!-- <section class="section" id="blog">
                 <div class="container">
                     <div class="section__header">
                         <h3 class="section__suptitle">Our stories</h3>
@@ -673,14 +672,14 @@
                          </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
     
             <!--------------------------------MAP-------------------------------->
             <section class="section section--map">
                 <div class="container">
                    <a target="_blank" class="map" href="https://www.google.com/maps/@48.382803,31.17461,6z?hl=uk">
                     <img class="map__img" src="IMG\Blog\PIN 2.png" alt="">
-                    <h2 class="map__text"><span>Open map</span></h2>
+                    <h2 class="map__text"><span>Карта</span></h2>
                    </a>
                 </div>
             </section>
@@ -690,15 +689,12 @@
                 <div class="container">
                     <div class="footer__inner">
                         <div class="footer__col footer__col--first">
-                            <div class="footer__logo">DmyYarMar</div>
+                            <div class="footer__logo">DYMAR</div>
                             <div class="footer__text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Totam nihil voluptate blanditiis quos obcaecati, exercitationem 
-                                molestias saepe aspernatur quae nostrum repellendus a incidunt 
-                                commodi delectus ea error porro omnis quis.
+                                Україна, Івано-Франківська область
                             </div>
     
-                            <div class="footer__social">
+                            <!-- <div class="footer__social">
                                 <div class="footer__social-header">
                                 </div>
                                 <div class="footer__social-content">
@@ -726,15 +722,15 @@
         
                                     </span>
                                 </div>
-                            </div>
+                            </div> -->
     
                             <form class="subscribe" action="#" method="get">
-                                <input class="subscribe__input" type="email" name="name" placeholder="Your Email...">
-                                <button class="subscribe__btn" type="submit">Subscribe</button>
+                                <input class="subscribe__input" type="email" name="name" placeholder="Поштова скринька...">
+                                <button class="subscribe__btn" type="submit">Підписка</button>
                             </form>
                         </div>
     
-                        <div class="footer__col footer__col--second">
+                        <!-- <div class="footer__col footer__col--second">
                             <div class="footer__title">Blogs</div>
                             <div class="blogs">
                                 <div class="blogs__item">
@@ -765,9 +761,9 @@
                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
     
-                        <div class="footer__col footer__col--third">
+                        <!-- <div class="footer__col footer__col--third">
                             <div class="footer__title">Instagram</div>
                             <div class="instagram">
                                 <a class="instagram__item" target="_blank"  href="#">
@@ -808,10 +804,10 @@
                             </div>
                             <div class="instagram__text">View more photos</div>
                         </div>
-                    </div>
+                    </div> -->
     
                     <div class="copyright">
-                        © 2022 DmyYarMar <span>cooperation</span>
+                        © 2022 DYMAR <span>cooperation</span>
                     </div>
                 </div>
             </footer>

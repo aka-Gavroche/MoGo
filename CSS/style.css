@@ -17,7 +17,43 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: url('../IMG/Intro.jpg') center/cover no-repeat;
+}
+
+.video_wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.video_wrapper::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.video {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video_media {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
 }
 
 .container {
@@ -197,6 +233,7 @@ header.active {
 }
 
 .intro__inner {
+    z-index: 5;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -234,6 +271,7 @@ header.active {
 
 .slider {
     position: absolute;
+    z-index: 5;
     bottom: 30px;   
     left: 0px;
     width: 100%;
@@ -365,7 +403,8 @@ header.active {
 
 .about__image img{
     max-width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
 }
 
 .about__item:hover .about__image {
@@ -403,7 +442,6 @@ header.active {
     opacity: 0;
     transition: 0.2s;
     z-index: 2;
-
 }
 
 .about__item:hover .about__text {
@@ -541,6 +579,10 @@ header.active {
 .wedo__img {
     display: block;
     margin: 0 auto;
+    max-width: 100%;
+    object-fit: cover;
+    width: 570px;
+    height: 380px;
 }
 
 .wedo--item--accordion {
@@ -761,10 +803,16 @@ header.active {
 /*--------------------MEET OUR TEEM--------------------*/
 
 .about__link {
+    transform: translateY(-35px);
     display: flex;
     flex-direction: row;
     justify-content: center;
-    transform: translateY(-35px);
+}
+
+.about__link__wrapper {
+    box-shadow: 0px 0px 5px 3px #000;
+    display: flex;
+    flex-direction: row;
 }
 
 .about__link a {
@@ -782,9 +830,14 @@ header.active {
     transition: 0.25s;
 }
 
+.about__link img {
+    -webkit-filter: drop-shadow(0px 0px 2px rgb(0, 0, 0));
+    filter: drop-shadow(0px 0px 2px rgb(0, 0, 0));
+}
+
 .about__link a:hover img {
-    -webkit-filter: drop-shadow(0px 0px 5px #fff);
-    filter: drop-shadow(0px 0px 3px #fff);
+    -webkit-filter: drop-shadow(0px 0px 5px rgb(0, 0, 0));
+    filter: drop-shadow(0px 0px 3px rgb(0, 0, 0));
 }
 
 .about__name {
@@ -1062,7 +1115,8 @@ a {
 
 .section--map {
     padding: 50px 0;
-    background: url("../IMG/Blog/Map_background.jpg") 50%/cover no-repeat;
+    /* background: url("../IMG/Blog/Map_background.jpg") 50%/cover no-repeat; */
+    background-color: #fff;
 }
 
 .map__img {
@@ -1123,12 +1177,19 @@ a {
 
 .footer__inner {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
-    padding: 0 0 35px;
 }
 
 .footer__col--first {
-    width: 40%;
+    width: 100%;
+    margin: 0 0 25px;
+    text-align: center;
+}
+
+.subscribe {
+    margin: 0 auto;
 }
 
 .footer__col--second {
@@ -1314,6 +1375,8 @@ a {
 }
 
 .copyright {
+    width: 1200px;
+    max-width: 100%;
     font-size: 14px;
     font-family: "Montserrat";
     color: #333333;
@@ -1358,13 +1421,6 @@ a {
         width: 100%;
         height: 100%;
         margin: 0 auto 20px;
-    }
-
-    .wedo__img {
-        max-width: 100%;
-        width: 570px;
-        height: 300px;
-        object-fit: cover;
     }
 
 /*----------REVIEWS----------*/
@@ -1525,13 +1581,22 @@ a {
         flex-wrap: wrap;
     }
 
-    .footer__col {
+    /* .footer__col {
         width: 50%;
-    }
+    } */
 
     .footer__col--first {
         width: 100%;
-        margin: 0 0 45px;
+        margin: 0 0 25px;
+        text-align: center;
+    }
+
+    /* .footer__logo {
+        text-align: center;
+    } */
+
+    .subscribe {
+        margin: 0 auto;
     }
 
     .instagram {
@@ -1858,6 +1923,14 @@ a {
 
     .subscribe__btn {
         width: 100%;
+    }
+}
+
+/*----------REVIEWS----------*/
+@media (max-width: 315px) {
+    .reviews__photo {
+        width: 165px;
+        height: 165px;
     }
 }
 

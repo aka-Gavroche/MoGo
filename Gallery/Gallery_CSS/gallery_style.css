@@ -12,8 +12,46 @@
     background: #95e1d3;
     border-radius: 5px;
 }
-/*---------------SCROLLBAR-END---------------*/
 
+/*----------Video---------- */
+.video_wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.video_wrapper::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.video {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video_media {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+/*--------------------Головні блоки-------------------- */
 html, body {
     font-family: 'Roboto', sans-serif;
     scrollbar-color:#242424 #3e3e3e;
@@ -28,43 +66,18 @@ body {
     
 }
 
-.table_wrapper {
-    width: 100%;
-    overflow-x: auto;
-    border: 2px solid #191919;
-}
-
-table {
-    width: 100%;
-}
-
-table th {
-    font-weight: 700;
-    background: #4b4b4a33;
-}
-
-.table_column {
-    padding: 8px 5px;
-    text-align: center;
-    border: 2px solid #191919;;
-}
-
-.column1 {
-    width: 65%;
-}
-
-.column2 {
-    width: 15%;
-}
-
-.column3 {
-    width: 20%;
+.main_wrapper {
+    height: 100vh;
+    overflow-y: scroll;
+    position: relative;
+    z-index: 500;
 }
 
 header {
     margin: 0 auto;
     padding: 10px 0 13px;
-    background-color: #e88283;
+    /* background-color: #e88283; */
+    background-color: hsla(359, 69%, 71%, 0.75);
     box-shadow: 0px 0px 8px 3px #000000;
 
     color: #fff;
@@ -93,46 +106,11 @@ header {
     transition: 0.3s;
 }
 
-/* .suptitle_text--second {
-    border-top: 2px solid #323330;
-    border-bottom: 2px solid #323330;
-    height: 15px;
-    width: 30px;
-} */
-
-/* .suptitle_text--second::before {
-    content: "";
-    position: relative;
-    top: 3px;
-    display: block;
-    border-bottom: 2px solid #323330;
-    height: 0px;
-    width: 30px;
-} */
-
 .suptitle_text:hover {
-    box-shadow: 0px 0px 8px 3px #000000;
     color: #95e1d3;
     transition: 0.3s; 
 }
 
-/* .suptitle_wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    
-} */
-
-/* .lesson_name::before {
-    content: "";
-    display: block;
-    margin: 5px auto 0;
-    width: 50px;
-    height: 10px;
-    background-color: #ffffff;
-} */
 
 .suptitle--show {
     display: unset;
@@ -140,43 +118,6 @@ header {
 
 .suptitle_list {
     display: none;
-}
-
-pre {
-    display: flex;
-    max-width: 100%;
-    
-    margin: 0 auto;
-    padding: 0;
-}
-
-code {
-    height: 100%;
-    width: 100%;
-}
-
-.hljs {
-    font-size: 18px;
-}
-
-.suptitle_list_block {
-    margin: 0 auto;
-
-    max-width: 100%;
-    width: 400px;
-    max-height: 200px;
-
-    background-color: #e88283;
-    box-shadow: 0px 0px 8px 2px #000000;
-
-    text-align: center;
-    font-size: 20px;
-    font-weight: 700;
-    color: #fff;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .suptitle_list_block_header {
@@ -333,48 +274,6 @@ hr {
     transition: 0.4s;
 }
 
-/*--------------------Списки--------------------*/
-ul {
-    margin: 0 0 0 30px;
-}
-
-li {
-    margin: 5px 2px;
-    list-style: inside disc;
-}
-
-li p {
-    margin: 0 0;
-}
-
-.underlist li {
-    list-style: inside circle;
-}
-
-p {
-    margin: 15px 0;
-}
-
-.remark {
-    border: 2px solid #000;
-    padding: 15px 25px;
-    background: #4b4b4a33;
-}
-
-.img_remark {
-    padding: 5px 5px;
-    background: #1e1e1e;
-}
-
-b {
-    font-weight: 700;
-}
-
-a {
-    color: #000;
-    text-decoration: underline;
-}
-
 /*----------Головна сторінка блогу----------*/
 .main_page_link {
     width: fit-content;
@@ -400,9 +299,7 @@ a {
  }
  
 .block {
-    margin: 35px auto 0; 
     /* padding: 30px 45px; */
-    background-color: #ffffff;
     box-shadow: 0px 0px 8px 2px #000000;
     width: 460px;
     max-width: 100%;
@@ -414,6 +311,7 @@ a {
 
 .block-title {
     text-align: center;
+    background-color: hsla(359, 69%, 71%, 0.75);
 }
 
 .block-content {
@@ -442,6 +340,7 @@ a {
 }
 
 .lesson_link {
+    margin: 35px auto 0; 
     max-width: 100%;
     display: block;
     /* margin: 0 10px; */
@@ -465,6 +364,62 @@ a {
     justify-content: space-around;
 }
 
+/*----------Фото-сторінка----------*/
+.photos_wrapper {
+    margin: 0 auto;
+    padding: 0 0px 40px;
+    max-width: 100%;
+    width: 1200px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.photo_block {
+    margin: 60px auto 0px;
+    box-shadow: 0px 0px 8px 2px #000000;
+    max-width: 100%;
+    width: 1280px;
+    height: 720px;
+    font-size: 20px; 
+    line-height: 1.2;
+    height: 650px;
+    transition: 0.3s;
+}
+
+.photo_block:hover {
+    box-shadow: 0px 0px 5px 3px #95e1d3;
+    transition: 0.3s;
+}
+
+.photo_block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.album_name {
+    margin: 10px auto 0;
+    padding: 10px 5px 5px;
+    width: 250px;
+    background-color: #ffffff00;
+    text-shadow: none;
+}
+
+a {
+    color: inherit;
+}
+
+/* .full_frame {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+} */
 
 /*----------Медіазапити----------*/
 @media (max-width: 1075px) {
@@ -494,6 +449,22 @@ a {
     .albums_wrapper {
         flex-direction: column;
         padding: 0 8px 40px;
+    }
+
+    .photo_block {
+        margin: 45px auto 0px;
+        max-width: 100%;
+        width: 1280px;
+        height: 560px;
+    }
+
+}
+
+@media (max-width: 725px) {
+    .photo_block {
+        max-width: 100%;
+        width: 1280px;
+        height: 540px;
     }
 }
 
@@ -545,5 +516,19 @@ a {
         font-size: 21px;
         margin: 0 5px;
     }
+
+    .photo_block {
+        margin: 45px auto 0px;
+        max-width: 100%;
+        width: 1280px;
+        height: 360px;
+    }
 }
 
+@media (max-width: 385px) {
+    .photo_block {
+        max-width: 100%;
+        width: 1280px;
+        height: 180px;
+    }
+}
