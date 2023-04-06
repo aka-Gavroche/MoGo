@@ -1,3 +1,9 @@
+<!-- Підключення до бази даних -->
+<?php
+    require_once 'Config\connect.php';
+?>
+<!------------------------------------->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,8 +73,8 @@
                 <div class="slider">
                    <div class="container"> 
                         <div class="slider__inner">
-                            <a href="Blog\blog_main_page.html" class="slider__item intro__button"><b>01</b> <span class="slider__text">Блог</span></a>
-                            <a href="Gallery\Gallery_main_page.html" class="slider__item intro__button"><b>02</b> <span class="slider__text">Галерея</span></a>
+                            <a href="Blog\blog_main_page.php" class="slider__item intro__button"><b>01</b> <span class="slider__text">Блог</span></a>
+                            <a href="Gallery\Gallery_main_page.php" class="slider__item intro__button"><b>02</b> <span class="slider__text">Галерея</span></a>
                         </div>
                    </div>
                 </div>
@@ -354,14 +360,14 @@
                             </div>
                             <div class="about__info">
                                 <div class="about__name">Юрій Дмитрів</div>
-                                <div class="about__profession">SEO-спеціаліст. QA/QC Тестувальник.</div>
+                                <div class="about__profession">Веб-дизайнер. QA/QC Тестувальник.</div>
                             </div>
                         </div>
     
                         <div class="about__item">
                            <div class="about__inner">
                             <div class="about__image">
-                                <img src="IMG/Meet-Our-Team/Christopher Campbell.jpg" alt="">
+                                <img src="IMG\Meet-Our-Team\Fake_Arsen.png" alt="">
                             </div>
                             <div class="about__text about__link">
                                 <div class="about__link__wrapper">
@@ -373,7 +379,7 @@
                            </div>
                            <div class="about__info">
                                 <div class="about__name">Арсен Яремин</div>
-                                <div class="about__profession">Технічний керівник. Backend-розробник.</div>
+                                <div class="about__profession">Технічний керівник. CEO. Backend-розробник.</div>
                             </div>
                         </div>
     
@@ -392,7 +398,7 @@
                             </div>
                             <div class="about__info">
                                 <div class="about__name">Сергій Марчук</div>
-                                <div class="about__profession">Фотограф. Веб-дизайнер. Frontend-розробник.</div>
+                                <div class="about__profession">Фотограф. Frontend-розробник.</div>
                             </div>
                         </div>
                     </div>
@@ -724,8 +730,8 @@
                                 </div>
                             </div> -->
     
-                            <form class="subscribe" action="#" method="get">
-                                <input class="subscribe__input" type="email" name="name" placeholder="Поштова скринька...">
+                            <form class="subscribe" action="Vendor\mailing_create.php" method="post">
+                                <input required class="subscribe__input" type="email" name="client_email" placeholder="Поштова скринька...">
                                 <button class="subscribe__btn" type="submit">Підписка</button>
                             </form>
                         </div>
@@ -807,7 +813,7 @@
                     </div> -->
     
                     <div class="copyright">
-                        © 2022 DYMAR <span>cooperation</span>
+                        © 2023 DYMAR <span>cooperation</span>
                     </div>
                 </div>
             </footer>
