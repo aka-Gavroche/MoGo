@@ -1,3 +1,4 @@
+DROP DATABASE dymar;
 CREATE DATABASE dymar;
 
 USE dymar;
@@ -18,13 +19,13 @@ CREATE TABLE Articles(
 	ID INT PRIMARY KEY AUTO_INCREMENT,
     Title VARCHAR(200) NOT NULL,
     Annotation VARCHAR(1000) NOT NULL,
-    Image VARCHAR(300) NOT NULL,
+    Image VARCHAR(3000) NOT NULL,
     Text VARCHAR(8000),
-    AddedTime DATETIME NOT NULL
+    AddedTime TIMESTAMP NOT NULL
 );
 
-INSERT INTO Articles(Title, Annotation, Image, Text, AddedTime) VALUES('First Article','Short Desription Of first Article','first.jpg','This is the first article and it will not be the last.', '01/01/2023');
-INSERT INTO Articles(Title, Annotation, Image, Text, AddedTime) VALUES('Last Article','Not so short Desription Of last Article','last.jpg','This is the last article and we are very sad about it.', '01/01/2022');
+INSERT INTO Articles(Title, Annotation, Image, Text) VALUES('First Article','Short Desription Of first Article','','This is the first article and it will not be the last.');
+INSERT INTO Articles(Title, Annotation, Image, Text) VALUES('Last Article','Not so short Desription Of last Article','','This is the last article and we are very sad about it.');
 
 CREATE TABLE Albums(
 	ID INT PRIMARY KEY AUTO_INCREMENT,
@@ -56,7 +57,8 @@ CREATE TABLE Users(
     Username VARCHAR(100) NOT NULL,
     Pass VARCHAR(100) NOT NULL,
     Email VARCHAR(100) NOT NULL,
-    DOB DATETIME
+    DOB DATETIME,
+    IsAdmin BIT
 );
 
-INSERT INTO Users(Username, Pass, Email, DOB) VALUES('admin', 'admin', 'admin@admin.com', '01/01/2001');
+INSERT INTO Users(Username, Pass, Email, DOB, IsAdmin) VALUES('admin', 'admin', 'admin@admin.com', '2001-01-01', 1);
