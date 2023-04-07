@@ -1,6 +1,7 @@
 <!-- Підключення до бази даних -->
 <?php
     require_once '..\Config\connect.php';
+    session_start();
 ?>
 <!------------------------------------->
 
@@ -111,13 +112,14 @@
                             <p><?= $clients_requests[5]?></p>
                         </div>
                         </a>
-                        
-                        <div class="panel">
-                            <div class="buttons_wrapper">
-                                <a href="article_updating_page.php?id=<?= $clients_requests[0]?>" class="button">Редагувати</a>
-                                <a href="../Vendor/article_delete.php?id=<?= $clients_requests[0]?>" class="button">Видалити</a>
+                        <?php if (isset($_SESSION['user_name']) && $_SESSION['user_admin'] == 1) {?>
+                            <div class="panel">
+                                <div class="buttons_wrapper">
+                                    <a href="article_updating_page.php?id=<?= $clients_requests[0]?>" class="button">Редагувати</a>
+                                    <a href="../Vendor/article_delete.php?id=<?= $clients_requests[0]?>" class="button">Видалити</a>
+                                </div>
                             </div>
-                        </div>
+                        <?php } ?>
                     </div>
                 <?php
                  

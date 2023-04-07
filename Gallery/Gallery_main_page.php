@@ -1,6 +1,7 @@
 <!-- Підключення до бази даних -->
 <?php
     require_once '..\Config\connect.php';
+    session_start();
 ?>
 <!------------------------------------->
 <!DOCTYPE html>
@@ -43,21 +44,7 @@
         <div class="suptitle">
             <h2 class="suptitle_text suptitle_text--second">Gallery</h2>
         </div>
-    
-        <!-- <div class="suptitle_list">
-            <div class="suptitle_list_block">
-                <div class="suptitle_list_block_header">
-                    <div class="close_button">X</div>
-                </div>
-                <div class="suptitle_list_content">
-                    <p id="suptitleItem1">Альбом #1</p>
-                    <p id="suptitleItem2">Альбом #2</p>
-                    <p id="suptitleItem3">Альбом #3</p>
-                    <p id="suptitleItem4">Альбом #4</p>
-                    <p id="suptitleItem5">Альбом #5</p>
-                </div>
-            </div>
-        </div> -->
+
     
         <div id = "top_button" class="top_button">
         </div>
@@ -93,9 +80,11 @@
             foreach ($clients_request as $clients_requests) {
                 ?>
                     <div class="album_wrapper">
+                    <?php if (isset($_SESSION['user_name']) && $_SESSION['user_admin'] == 1) {?>
                         <a href="..\Vendor\album_delete.php?id=<?= $clients_requests[0]?>">
                             <img class="delete_icon" src="..\IMG\Icons\delete.png" alt="">
                         </a>
+                    <?php } ?>
                         <div class="album_preview">
                             <a href="Gallery_album_page.php?id=<?= $clients_requests[0]?>">
                                 <img src="<?= $clients_requests[2]?>" alt="" class="album_img">

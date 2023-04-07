@@ -1,6 +1,7 @@
 <!-- Підключення до бази даних -->
 <?php
     require_once 'Config\connect.php';
+    session_start();
 ?>
 <!------------------------------------->
 
@@ -43,6 +44,13 @@
                         <a class="nav__link" href="#" data-scroll="#services">Service</a>
                         <a class="nav__link" href="#" data-scroll="#works">Work</a> 
                         <a class="nav__link" href="#" data-scroll="#footer">Contact</a>
+                        <?php if(isset($_SESSION['user_name'])) {?>
+                            <span class="nav__link">Вітаю, <?php echo $_SESSION['user_name'];?></span>
+                            <form method="POST" action="Vendor/admin_access.php">
+                                <input type="hidden" name="action" value="logout">
+                                <button class="nav__link" type="submit">Вийти</button>
+                            </form>
+                        <?php } ?>
                     </nav>
 
                     <button class="nav-toggle" type="button" id="nav_toggle">

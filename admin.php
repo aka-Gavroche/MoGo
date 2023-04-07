@@ -2,8 +2,7 @@
 <!-- Підключення до бази даних -->
 <?php
     require_once 'Config\connect.php';
-
-
+    session_start();
 ?>
 <!------------------------------------->
 
@@ -50,11 +49,14 @@
         <div class="article_wrapper">
             <div class="block">
                 <form class="admin_form" action="Vendor\admin_access.php" method="post">
+                    <input type="hidden" name="action" value="login">
                     <p class="input_title">Логін</p>
-                    <input class="input admin_input" type="email" name="user_login">
+                    <input class="input admin_input" type="email" name="email">
+                    <span class="invalid-feedback"><?php if(isset($_SESSION['message'])) { echo $_SESSION['message']['email_err'];} ?></span>
 
                     <p class="input_title">Пароль</p>
-                    <input class="input admin_input" type="password" name="user_password">
+                    <input class="input admin_input" type="password" name="password">
+                    <span class="invalid-feedback"><?php if(isset($_SESSION['message'])) {echo $_SESSION['message']['password_err'];} ?></span>
 
                     <button class="admin_button"  type="submit">Увійти</button>
                 </form>
