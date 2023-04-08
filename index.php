@@ -48,7 +48,7 @@
                             <span class="nav__link">Вітаю, <?php echo $_SESSION['user_name'];?></span>
                             <form method="POST" action="Vendor/admin_access.php">
                                 <input type="hidden" name="action" value="logout">
-                                <button class="nav__link" type="submit">Вийти</button>
+                                <button class="nav__link nav_link--button" type="submit">Вийти</button>
                             </form>
                         <?php } ?>
                     </nav>
@@ -360,8 +360,6 @@
                                 </div>
                                 <div class="about__text about__link">
                                     <div class="about__link__wrapper">
-                                        <!-- <a target="_blank" href="#"><img src="IMG\Meet-Our-Team\Logos\facebook.png" alt=""></a>
-                                        <a target="_blank" href="#"><img src="IMG\Meet-Our-Team\Logos\twitter.png" alt=""></a> -->
                                         <a target="_blank" href="https://www.instagram.com/dmitriv.molfar/"><img src="IMG\Meet-Our-Team\Logos\instagram.png" alt=""></a>
                                     </div>
                                 </div>
@@ -379,8 +377,6 @@
                             </div>
                             <div class="about__text about__link">
                                 <div class="about__link__wrapper">
-                                    <!-- <a target="_blank" href="#"><img src="IMG\Meet-Our-Team\Logos\facebook.png" alt=""></a>
-                                    <a target="_blank" href="#"><img src="IMG\Meet-Our-Team\Logos\twitter.png" alt=""></a> -->
                                     <a target="_blank" href="https://www.instagram.com/a_yaremyn/"><img src="IMG\Meet-Our-Team\Logos\instagram.png" alt=""></a>
                                 </div>
                             </div>
@@ -595,99 +591,6 @@
               </div>
           </section>
     
-            <!--------------------------------BLOG-------------------------------->
-            <!-- <section class="section" id="blog">
-                <div class="container">
-                    <div class="section__header">
-                        <h3 class="section__suptitle">Our stories</h3>
-                        <h2 class="section__title">Latest Blog</h2>
-                    </div>
-    
-                    <div class="blog">
-                        <div class="blog__item">
-                           <div class="blog__header">
-                                <a target="_blank" href="#">
-                                    <img class="blog__photo" src="IMG\Blog\1.jpg" alt="">
-                                </a>
-                                <div class="blog__date">
-                                    <div class="date__number">15</div> 
-                                    Jan
-                                </div>
-                           </div>
-                           <div class="blog__content">
-                                <div class="blog__title">
-                                    <a target="_blank" href="#">Lorem ipsum dolor sit amet</a>
-                                </div>
-                                <div class="blog__text">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                    Reprehenderit laudantium numquam iste excepturi, tenetur vero.
-                                </div>
-                           </div>
-                           <div class="blog__footer">
-                            <img src="IMG\Blog\VIEW.png" alt="">
-                            <span>542</span>
-                            <img src="IMG\Blog\SPEECH BUBBLE 2.png" alt="">
-                            <span>17</span>
-                           </div>
-                        </div>
-    
-                        <div class="blog__item">
-                            <div class="blog__header">
-                                 <a target="_blank" href="#">
-                                     <img class="blog__photo" src="IMG\Blog\2.jpg" alt="">
-                                 </a>
-                                 <div class="blog__date">
-                                     <div class="date__number">14</div> 
-                                     Jan
-                                 </div>
-                            </div>
-                            <div class="blog__content">
-                                 <div class="blog__title">
-                                     <a target="_blank" href="#">Lorem ipsum dolor sit amet</a>
-                                 </div>
-                                 <div class="blog__text">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                    Reprehenderit laudantium numquam iste excepturi, tenetur vero.
-                                 </div>
-                            </div>
-                            <div class="blog__footer">
-                             <img src="IMG\Blog\VIEW.png" alt="">
-                             <span>992</span>
-                             <img src="IMG\Blog\SPEECH BUBBLE 2.png" alt="">
-                             <span>42</span>
-                            </div>
-                         </div>
-    
-                         <div class="blog__item">
-                            <div class="blog__header">
-                                 <a target="_blank" href="#">
-                                     <img class="blog__photo" src="IMG\Blog\3.jpg" alt="">
-                                 </a>
-                                 <div class="blog__date">
-                                     <div class="date__number">12</div> 
-                                     Jan
-                                 </div>
-                            </div>
-                            <div class="blog__content">
-                                 <div class="blog__title">
-                                     <a target="_blank" href="#">Lorem ipsum dolor sit amet</a>
-                                 </div>
-                                 <div class="blog__text">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                    Reprehenderit laudantium numquam iste excepturi, tenetur vero.
-                                 </div>
-                            </div>
-                            <div class="blog__footer">
-                             <img src="IMG\Blog\VIEW.png" alt="">
-                             <span>1560</span>
-                             <img src="IMG\Blog\SPEECH BUBBLE 2.png" alt="">
-                             <span>98</span>
-                            </div>
-                         </div>
-                    </div>
-                </div>
-            </section> -->
-    
             <!--------------------------------MAP-------------------------------->
             <section class="section section--map">
                 <div class="container">
@@ -708,117 +611,11 @@
                                 Україна, Івано-Франківська область
                             </div>
     
-                            <!-- <div class="footer__social">
-                                <div class="footer__social-header">
-                                </div>
-                                <div class="footer__social-content">
-                                    <span>Follow us:</span>
-                                    <span class="links">
-                                        <a target="_blank" href="#">
-                                            <img src="IMG\Footer\Social-icons\facebook.png" alt="">
-                                        </a>
-        
-                                        <a target="_blank" href="#">
-                                            <img src="IMG\Footer\Social-icons\twitter.png" alt="">
-                                        </a>
-        
-                                        <a target="_blank" href="#">
-                                            <img src="IMG\Footer\Social-icons\instagram.png" alt="">
-                                        </a>
-        
-                                        <a target="_blank" href="#">
-                                            <img src="IMG\Footer\Social-icons\pinterest.png" alt="">
-                                        </a>
-        
-                                        <a target="_blank" href="#">
-                                            <img src="IMG\Footer\Social-icons\youtube.png" alt="">
-                                        </a>
-        
-                                    </span>
-                                </div>
-                            </div> -->
-    
                             <form class="subscribe" action="Vendor\mailing_create.php" method="post">
                                 <input required class="subscribe__input" type="email" name="client_email" placeholder="Поштова скринька...">
                                 <button class="subscribe__btn" type="submit">Підписка</button>
                             </form>
                         </div>
-    
-                        <!-- <div class="footer__col footer__col--second">
-                            <div class="footer__title">Blogs</div>
-                            <div class="blogs">
-                                <div class="blogs__item">
-                                    <img class="blogs__img" src="IMG\Footer\Blogs\1.jpg" alt="">
-                                    <div class="blogs__content">
-                                        <a class="blogs__title" target="_blank" href="#">
-                                            Lorem ipsum dolor sit amet,  consectetur adipiscing
-                                        </a>
-                                        <div class="blogs__date">Jan 9, 2016</div>
-                                   </div>
-                                </div>
-    
-                                <div class="blogs__item">
-                                    <img class="blogs__img" src="IMG\Footer\Blogs\2.jpg" alt="">
-                                    <div class="blogs__content">
-                                        <a class="blogs__title" target="_blank" href="#">
-                                            Consectetur adipiscing elit,  sed do eiusmod tempor                                    </a>
-                                        <div class="blogs__date">Jan 9, 2016</div>
-                                   </div>
-                                </div>
-    
-                                <div class="blogs__item">
-                                    <img class="blogs__img" src="IMG\Footer\Blogs\3.jpg" alt="">
-                                    <div class="blogs__content">
-                                        <a class="blogs__title" target="_blank" href="#">
-                                            Sed do eiusmod tempor  incididunt ut labore                                    </a>
-                                        <div class="blogs__date">Jan 9, 2016</div>
-                                   </div>
-                                </div>
-                            </div>
-                        </div> -->
-    
-                        <!-- <div class="footer__col footer__col--third">
-                            <div class="footer__title">Instagram</div>
-                            <div class="instagram">
-                                <a class="instagram__item" target="_blank"  href="#">
-                                    <img src="IMG\Footer\Instagram\1.jpg" alt="">
-                                </a>
-    
-                                <a class="instagram__item" target="_blank"  href="#">
-                                    <img src="IMG\Footer\Instagram\2.jpg" alt="">
-                                </a>
-    
-                                <a class="instagram__item" target="_blank"  href="#">
-                                    <img src="IMG\Footer\Instagram\3.jpg" alt="">
-                                </a>
-    
-                                <a class="instagram__item" target="_blank"  href="#">
-                                    <img src="IMG\Footer\Instagram\4.jpg" alt="">
-                                </a>
-    
-                                <a class="instagram__item" target="_blank"  href="#">
-                                    <img src="IMG\Footer\Instagram\5.jpg" alt="">
-                                </a>
-    
-                                <a class="instagram__item" target="_blank"  href="#">
-                                    <img src="IMG\Footer\Instagram\6.jpg" alt="">
-                                </a>
-    
-                                <a class="instagram__item" target="_blank"  href="#">
-                                    <img src="IMG\Footer\Instagram\7.jpg" alt="">
-                                </a>
-    
-                                <a class="instagram__item" target="_blank"  href="#">
-                                    <img src="IMG\Footer\Instagram\8.jpg" alt="">
-                                </a>
-    
-                                <a class="instagram__item" target="_blank"  href="#">
-                                    <img src="IMG\Footer\Instagram\9.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="instagram__text">View more photos</div>
-                        </div>
-                    </div> -->
     
                     <div class="copyright">
                         © 2023 DYMAR <span>cooperation</span>
@@ -836,3 +633,5 @@
             </script>
 </body>
 </html>
+
+

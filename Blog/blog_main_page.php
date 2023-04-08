@@ -26,7 +26,6 @@
     <div class="video_wrapper">
         <div class="video">
             <video class="video_media" src="../IMG/video.mp4" autoplay muted loop>
-                
             </video>
         </div>
     </div>
@@ -41,30 +40,12 @@
                 <hr>
             </h1>
             <h2 class="suptitle_text">Blog</h2>
-            <div class="buttons_wrapper">
-                <a href="article_creating_page.php" class="button button_create">Створити</a>   
-            </div>
+            <?php if (isset($_SESSION['user_name']) && $_SESSION['user_admin'] == 1) {?>
+                <div class="buttons_wrapper">
+                    <a href="article_creating_page.php" class="button button_create">Створити</a>   
+                </div>
+            <?php } ?>
         </header>
-    
-        <!-----------------------------------Зафіксована панель------------------------------------>
-        <div class="suptitle">
-            <h2 class="suptitle_text suptitle_text--second">Blog</h2>
-        </div>
-    
-        <!-- <div class="suptitle_list">
-            <div class="suptitle_list_block">
-                <div class="suptitle_list_block_header">
-                    <div class="close_button">X</div>
-                </div>
-                <div class="suptitle_list_content">
-                    <p id="suptitleItem1">Стаття #1</p>
-                    <p id="suptitleItem2">Стаття #2</p>
-                    <p id="suptitleItem3">Стаття #3</p>
-                    <p id="suptitleItem4">Стаття #4</p>
-                    <p id="suptitleItem5">Стаття #5</p>
-                </div>
-            </div>
-        </div> -->
         
         <a href="blog_main_page.php">
             <div id = "top_button" class="top_button">
@@ -128,8 +109,5 @@
 
     </div>
     
-    <!------------------------------------Скрипти на чистому JS------------------------------------>
-    <script src="Blog_JS\blog_main_page_script.js"></script>
-    <!-- <script src="Blog_JS/blog_nav_list_script.js"></script> -->
 </body>
 </html>

@@ -53,32 +53,12 @@
             </h1>
             <h2 class="suptitle_text"><a href="Gallery_main_page.php">Gallery</a></h2>
             <h3 class="album_name"><?= $TitleFor['Title']?></h3>
-            <div class="buttons_wrapper">
-                <a href="album_adding_photo.php?id=<?=$album_id?>" class="button button_create">Створити</a>   
-            </div>
+            <?php if (isset($_SESSION['user_name']) && $_SESSION['user_admin'] == 1) {?>
+                <div class="buttons_wrapper">
+                    <a href="album_adding_photo.php?id=<?=$album_id?>" class="button button_create">Створити</a>   
+                </div>
+            <?php } ?>
         </header>
-    
-        <div class="suptitle">
-            <h2 class="suptitle_text suptitle_text--second">Gallery</h2>
-        </div>
-    
-        <div class="suptitle_list">
-            <div class="suptitle_list_block">
-                <div class="suptitle_list_block_header">
-                    <div class="close_button">X</div>
-                </div>
-                <div class="suptitle_list_content">
-                    <p id="suptitleItem1">Альбом #1</p>
-                    <p id="suptitleItem2">Альбом #2</p>
-                    <p id="suptitleItem3">Альбом #3</p>
-                    <p id="suptitleItem4">Альбом #4</p>
-                    <p id="suptitleItem5">Альбом #5</p>
-                </div>
-            </div>
-        </div>
-    
-        <div id = "top_button" class="top_button">
-        </div>
     
         <!------------------------------------Фотографії альбому------------------------------------>
         <div class="photos_wrapper">
@@ -100,15 +80,9 @@
                 <?php
                  
             };
-        ?>
-
-
-               
+        ?> 
         </div>
     </div>
         
-    <!------------------------------------Скрипти на чистому JS------------------------------------>
-    <script src="../Blog/Blog_JS/blog_main_page_script.js"></script>
-    <script src="../Blog/Blog_JS/blog_nav_list_script.js"></script>
 </body>
 </html>

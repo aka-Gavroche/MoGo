@@ -65,8 +65,5 @@
         
     </div>
     
-    <!------------------------------------Скрипти на чистому JS------------------------------------>
-    <script src="Blog_JS\blog_main_page_script.js"></script>
-    <!-- <script src="Blog_JS/blog_nav_list_script.js"></script> -->
 </body>
 </html>

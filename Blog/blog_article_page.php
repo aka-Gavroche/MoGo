@@ -42,10 +42,6 @@
             <h2 class="suptitle_text"><a href="blog_main_page.php">Blog</a></h2>
         </header>
 
-        <div class="suptitle">
-            <h2 class="suptitle_text suptitle_text--second"><a href="Blog/blog_main_page.php">Blog</a></h2>
-        </div>
-
         <!--Кнопка "Вверх"-->
         <a href="blog_article_page.php?id=<?= $article_id?>">
             <div id = "top_button" class="top_button">
@@ -76,8 +72,5 @@
         
     </div>
     
-
-    <!-- <script src="../../JS/script.js"></script>
-    <script src="JS\script.js"></script> -->
 </body>
 </html>

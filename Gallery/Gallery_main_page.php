@@ -36,18 +36,13 @@
                 <hr>
             </h1>
             <h2 class="suptitle_text">Gallery</h2>
-            <div class="buttons_wrapper">
-                <a href="album_creating_page.php" class="button button_create">Створити</a>   
-            </div>
+            <?php if (isset($_SESSION['user_name']) && $_SESSION['user_admin'] == 1) {?>
+                <div class="buttons_wrapper">
+                    <a href="album_creating_page.php" class="button button_create">Створити</a>   
+                 </div>
+            <?php } ?>
         </header>
-    
-        <div class="suptitle">
-            <h2 class="suptitle_text suptitle_text--second">Gallery</h2>
-        </div>
 
-    
-        <div id = "top_button" class="top_button">
-        </div>
         <div class="albums_wrapper">
         <!------------------------------------Альбоми галереї------------------------------------>
         <?php 
@@ -102,8 +97,5 @@
         </div>  
     </div>
         
-    <!------------------------------------Скрипти на чистому JS------------------------------------>
-    <!-- <script src="Blog_JS/blog_main_page_script.js"></script>
-    <script src="Blog_JS/blog_nav_list_script.js"></script> -->
 </body>
 </html>
