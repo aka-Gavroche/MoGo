@@ -2,6 +2,7 @@
  <!-- Підключення до бази даних -->
 <?php
     require_once '..\Config\connect.php';
+    session_start();
 
     $album_id = $_GET['id'];
     
@@ -86,15 +87,13 @@
             foreach ($clients_request as $clients_requests) {
                 ?>
                     <div class="photo_block">
+                    <?php if (isset($_SESSION['user_name']) && $_SESSION['user_admin'] == 1) {?>
                         <form action="..\Vendor\photo_delete.php" method="post">
-                            <!-- <a href="..\Vendor\photo_delete.php?id=<?=$clients_requests[0]?>">
-                                <img class="delete_icon" src="..\IMG\Icons\delete.png" alt="">
-                            </a> -->
                             <input type="hidden" name="photo_id" value="<?=$clients_requests[0]?>">
                             <input type="hidden" name="album_id" value="<?=$album_id?>">
                             <button class="delete_icon" type="submit"></button>
                         </form>
-                        
+                    <?php } ?>
                         <img class="full_frame" src="<?= $clients_requests[2]?>" alt="">
                     </div>
                

@@ -82,3 +82,7 @@
     font-size: 25px;
     color: #fff;
 }
+
+.invalid-feedback {
+    color:crimson;
+}
